@@ -259,6 +259,10 @@ Attach the run if you have it.
 <p>The layer below: <a href="https://auroracommons.github.io/machine/">Machine, autonomy</a></p>
 <p>The research under this layer: <a href="https://auroracommons.github.io/auroracommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
 
+Built on Machine: autonomy.
+
+Unlocks the ability to commit.
+
 <footer class="commons-footer">
   <p>Aurora Commons addresses the hierarchy of human needs through open source.</p>
   <p>Motto: Stand on the shoulders of giants.</p>
