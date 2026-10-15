@@ -1,0 +1,345 @@
+{
+  "corpus": "Baltimore Catechism No. 2, selected lessons (public domain)",
+  "source_url": "https://www.gutenberg.org/cache/epub/14552/pg14552.txt",
+  "passage_count": 41,
+  "excluded": [
+    {
+      "id": "BC2 Q.241",
+      "reason": "Answer quotes the words of consecration verbatim; the output refuser rejects that shape by design."
+    },
+    {
+      "id": "BC2 Q.242",
+      "reason": "Question and answer quote the words of consecration verbatim; same design conflict as Q.241."
+    }
+  ],
+  "passages": [
+    {
+      "id": "BC2 Q.1",
+      "question_number": 1,
+      "lesson": "On the End of Man",
+      "question": "Who made the world?",
+      "answer": "God made the world.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.2",
+      "question_number": 2,
+      "lesson": "On the End of Man",
+      "question": "Who is God?",
+      "answer": "God is the Creator of heaven and earth, and of all things.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.3",
+      "question_number": 3,
+      "lesson": "On the End of Man",
+      "question": "What is man?",
+      "answer": "Man is a creature composed of body and soul, and made to the image and likeness of God.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.4",
+      "question_number": 4,
+      "lesson": "On the End of Man",
+      "question": "Is this likeness in the body or in the soul?",
+      "answer": "This likeness is chiefly in the soul.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.5",
+      "question_number": 5,
+      "lesson": "On the End of Man",
+      "question": "How is the soul like to God?",
+      "answer": "The soul is like God because it is a spirit that will never die, and has understanding and free will.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.6",
+      "question_number": 6,
+      "lesson": "On the End of Man",
+      "question": "Why did God make you?",
+      "answer": "God made me to know Him, to love Him, and to serve Him in this world, and to be happy with Him forever in the next.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.7",
+      "question_number": 7,
+      "lesson": "On the End of Man",
+      "question": "Of which must we take more care, our soul or our body?",
+      "answer": "We must take more care of our soul than of our body.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.8",
+      "question_number": 8,
+      "lesson": "On the End of Man",
+      "question": "Why must we take more care of our soul than of our body?",
+      "answer": "We must take more care of our soul than of our body, because in losing our soul we lose God and everlasting happiness.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.9",
+      "question_number": 9,
+      "lesson": "On the End of Man",
+      "question": "What must we do to save our souls?",
+      "answer": "To save our souls we must worship God by faith, hope, and charity; that is, we must believe in Him, hope in Him, and love Him with all our heart.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.10",
+      "question_number": 10,
+      "lesson": "On the End of Man",
+      "question": "How shall we know the things which we are to believe?",
+      "answer": "We shall know the things which we are to believe from the Catholic Church, through which God speaks to us.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.11",
+      "question_number": 11,
+      "lesson": "On the End of Man",
+      "question": "Where shall we find the chief truths which the Church teaches?",
+      "answer": "We shall find the chief truths which the Church teaches in the Apostles' Creed.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.136",
+      "question_number": 136,
+      "lesson": "On the Sacraments in General",
+      "question": "What is a Sacrament?",
+      "answer": "A Sacrament is an outward sign instituted by Christ to give grace.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.137",
+      "question_number": 137,
+      "lesson": "On the Sacraments in General",
+      "question": "How many Sacraments are there?",
+      "answer": "There are seven Sacraments: Baptism, Confirmation, Holy Eucharist, Penance, Extreme Unction, Holy Orders, and Matrimony.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.138",
+      "question_number": 138,
+      "lesson": "On the Sacraments in General",
+      "question": "Whence have the Sacraments the power of giving grace?",
+      "answer": "The Sacraments have the power of giving grace from the merits of Jesus Christ.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.139",
+      "question_number": 139,
+      "lesson": "On the Sacraments in General",
+      "question": "What grace do the Sacraments give?",
+      "answer": "Some of the Sacraments give sanctifying grace, and others increase it in our souls.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.140",
+      "question_number": 140,
+      "lesson": "On the Sacraments in General",
+      "question": "Which are the Sacraments that give sanctifying grace?",
+      "answer": "The Sacraments that give sanctifying grace are Baptism and Penance; and they are called Sacraments of the dead.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.141",
+      "question_number": 141,
+      "lesson": "On the Sacraments in General",
+      "question": "Why are Baptism and Penance called Sacraments of the dead?",
+      "answer": "Baptism and Penance are called Sacraments of the dead, because they take away sin, which is the death of the soul, and give grace, which is its life.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.152",
+      "question_number": 152,
+      "lesson": "On Baptism",
+      "question": "What is Baptism?",
+      "answer": "Baptism is a Sacrament which cleanses us from original sin, makes us Christians, children of God, and heirs of heaven.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.153",
+      "question_number": 153,
+      "lesson": "On Baptism",
+      "question": "Are actual sins ever remitted by Baptism?",
+      "answer": "Actual sins and all the punishment due to them are remitted by Baptism, if the person baptized be guilty of any.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.154",
+      "question_number": 154,
+      "lesson": "On Baptism",
+      "question": "Is Baptism necessary to salvation?",
+      "answer": "Baptism is necessary to salvation, because without it we cannot enter into the kingdom of heaven.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.155",
+      "question_number": 155,
+      "lesson": "On Baptism",
+      "question": "Who can administer Baptism?",
+      "answer": "The priest is the ordinary minister of Baptism; but in case of necessity any one who has the use of reason may baptize.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.156",
+      "question_number": 156,
+      "lesson": "On Baptism",
+      "question": "How is Baptism given?",
+      "answer": "Whoever baptizes should pour water on the head of the person to be baptized, and say, while pouring the water: I baptize thee in the name of the Father, and of the Son, and of the Holy Ghost.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.157",
+      "question_number": 157,
+      "lesson": "On Baptism",
+      "question": "How many kinds of Baptism are there?",
+      "answer": "There are three kinds of Baptism: Baptism of water, of desire, and of blood.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.187",
+      "question_number": 187,
+      "lesson": "On the Sacrament of Penance",
+      "question": "What is the Sacrament of Penance?",
+      "answer": "Penance is a Sacrament in which the sins committed after Baptism are forgiven.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.188",
+      "question_number": 188,
+      "lesson": "On the Sacrament of Penance",
+      "question": "How does the Sacrament of Penance remit sin, and restore to the soul the friendship of God?",
+      "answer": "The Sacrament of Penance remits sins and restores the friendship of God to the soul by means of the absolution of the priest.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.189",
+      "question_number": 189,
+      "lesson": "On the Sacrament of Penance",
+      "question": "How do you know that the priest has the power of absolving from the sins committed after Baptism?",
+      "answer": "I know that the priest has the power of absolving from the sins committed after Baptism, because Jesus Christ granted that power to the priests of His Church when He said: \"Receive ye the Holy Ghost. Whose sins you shall forgive, they are forgiven them; whose sins you shall retain, they are retained.\"",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.190",
+      "question_number": 190,
+      "lesson": "On the Sacrament of Penance",
+      "question": "How do the priests of the Church exercise the power of forgiving sins?",
+      "answer": "The priests of the Church exercise the power of forgiving sins by hearing the confession of sins, and granting pardon for them as ministers of God and in His name.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.238",
+      "question_number": 238,
+      "lesson": "On the Holy Eucharist",
+      "question": "What is the Holy Eucharist?",
+      "answer": "The Holy Eucharist is the Sacrament which contains the body and blood, soul and divinity, of our Lord Jesus Christ under the appearances of bread and wine.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.239",
+      "question_number": 239,
+      "lesson": "On the Holy Eucharist",
+      "question": "When did Christ institute the Holy Eucharist?",
+      "answer": "Christ instituted the Holy Eucharist at the Last Supper, the night before He died.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.240",
+      "question_number": 240,
+      "lesson": "On the Holy Eucharist",
+      "question": "Who were present when our Lord instituted the Holy Eucharist?",
+      "answer": "When our Lord instituted the Holy Eucharist the twelve Apostles were present.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.243",
+      "question_number": 243,
+      "lesson": "On the Holy Eucharist",
+      "question": "Is Jesus Christ whole and entire both under the form of bread and under the form of wine?",
+      "answer": "Jesus Christ is whole and entire both under the form of bread and under the form of wine.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.244",
+      "question_number": 244,
+      "lesson": "On the Holy Eucharist",
+      "question": "Did anything remain of the bread and wine after their substance had been changed into the substance of the body and blood of our Lord?",
+      "answer": "After the substance of the bread and wine had been changed into the substance of the body and blood of our Lord there remained only the appearances of bread and wine.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.245",
+      "question_number": 245,
+      "lesson": "On the Holy Eucharist",
+      "question": "What do you mean by the appearances of bread and wine?",
+      "answer": "By the appearances of bread and wine I mean the figure, the color, the taste, and whatever appears to the senses.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.246",
+      "question_number": 246,
+      "lesson": "On the Holy Eucharist",
+      "question": "What is this change of the bread and wine into the body and blood of our Lord called?",
+      "answer": "This change of the bread and wine into the body and blood of our Lord is called Transubstantiation.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.247",
+      "question_number": 247,
+      "lesson": "On the Holy Eucharist",
+      "question": "How was the substance of the bread and wine changed into the substance of the body and blood of Christ?",
+      "answer": "The substance of the bread and wine was changed into the substance of the body and blood of Christ by His almighty power.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.248",
+      "question_number": 248,
+      "lesson": "On the Holy Eucharist",
+      "question": "Does this change of bread and wine into the body and blood of Christ continue to be made in the Church?",
+      "answer": "This change of bread and wine into the body and blood of Christ continues to be made in the Church by Jesus Christ through the ministry of His priests.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.303",
+      "question_number": 303,
+      "lesson": "On Prayer",
+      "question": "Is there any other means of obtaining God's grace than the Sacraments?",
+      "answer": "There is another means of obtaining God's grace, and it is prayer.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.304",
+      "question_number": 304,
+      "lesson": "On Prayer",
+      "question": "What is prayer?",
+      "answer": "Prayer is the lifting up of our minds and hearts to God to adore Him, to thank Him for His benefits, to ask His forgiveness, and to beg of Him all the graces we need whether for soul or body.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.305",
+      "question_number": 305,
+      "lesson": "On Prayer",
+      "question": "Is prayer necessary to salvation?",
+      "answer": "Prayer is necessary to salvation, and without it no one having the use of reason can be saved.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.306",
+      "question_number": 306,
+      "lesson": "On Prayer",
+      "question": "At what particular times should we pray?",
+      "answer": "We should pray particularly on Sundays and holydays, every morning and night, in all dangers, temptations, and afflictions.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.307",
+      "question_number": 307,
+      "lesson": "On Prayer",
+      "question": "How should we pray?",
+      "answer": "We should pray: 1st, With attention; 2d, With a sense of our own helplessness and dependence upon God; 3d, With a great desire for the graces we beg of God; 4th, With trust in God's goodness; 5th, With perseverance.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    }
+  ]
+}
