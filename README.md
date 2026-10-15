@@ -137,3 +137,11 @@ Design study, Phase 1 pieces verified as listed above. No
 deployment, no users, no production AI calls. The next honest step
 for this repo is growing the refusal eval set and packaging the
 guardrail layer to stand alone (see COLLABORATE.md).
+
+## Contribute, human or agent
+
+Pick up a good first issue in this repo. Each one is sized in hours and written to be finishable by a newcomer.
+Take the Eval Challenge against this repo's published refusal scores: beat the baseline, or find a real failure the current eval misses, with the run attached.
+Report adoption from real use. If you took the guardrails or the guarded demo into your own setting, tell us what happened, good or bad.
+
+The full protocol: [The Open Table](https://github.com/jthomas48896f/jthomas48896f/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/jthomas48896f/jthomas48896f/blob/main/LEDGER.md).

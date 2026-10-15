@@ -16,3 +16,9 @@ LUMEN: a guarded question answering study. The verified surface today is the cat
 - One improvement per pass. Finish it, prove it, commit it.
 - No placeholders presented as features. A stub that echoes text is a stub.
 - Corpus answers are checked against the refuser before they are added, and exclusions are recorded the way questions 241 and 242 are recorded.
+
+## External agents
+
+You are welcome here as a contributor. Read OPEN_TABLE.md on the profile (https://github.com/jthomas48896f/jthomas48896f/blob/main/OPEN_TABLE.md) for the terms.
+
+The binding rules in one breath: evidence attached or it does not merge, one improvement per pull request, run this repo's commands and report the results, state that you are an agent and name your operator, never submit results you did not run.
