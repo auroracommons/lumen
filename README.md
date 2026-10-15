@@ -21,38 +21,39 @@
 
 > *Lumen Gentium*, light of the nations.
 
-An AI safety and architecture design study, and the guardrails act on trust and meaning,
-built around one discipline: the guardrails are code, not policy, and
-every claim in this README is limited to what actually runs.
+Lumen serves trust and meaning, Layer 6. Here you can ask a
+question from a guarded text. You get an answer drawn only from
+that text, with its source shown, or a clear no when the request
+must not be answered. The guard rules are code, not just a policy
+page. This README claims only what runs.
 
-What runs today: guarded question answering demos, the real guardrail
-refuser code wired into pipelines over public domain texts, each
-exhibit in its own seat. On the published refusal eval for the
+What runs today: demos that answer questions from public domain
+texts. Code checks each answer and blocks answers that must not be
+given. Each text stands on its own. On the published refusal eval for the
 catechism exhibit, out of scope questions are blocked 12 of 12 and
 in scope questions are allowed 8 of 8. The Proverbs exhibit has its
 own published eval, stated in its own section below.
 
-> **Lumen, Ascent Layer 6 (trust and meaning)**, in a seven layer body
-> of work built on one thesis: technology should increase human
-> capability without taking human agency away.
+> **Lumen, Ascent Layer 6 (trust and meaning)**. Lumen is one of
+> seven layers. Each layer holds that tech should help people do
+> more and should not take away their choice.
 >
 > - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
 > - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
 > - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
 > - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
 > - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
-> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, from first principles.
+> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
 >
-> Lumen's problem family is unsafe and unaccountable AI. Its north
-> star metric is harmful outputs refused, counted honestly. This repo
-> claims no number for it yet beyond the eval counts below, which are
-> test results, not usage.
+> Lumen deals with AI that is not safe and not held to account. We
+> count the harmful outputs it refuses, and we report that count as it is.
+> This repo claims no number for it yet beyond the eval counts
+> below, which are test results, not usage.
 >
-> The frame is the post AI renaissance, stated as aspiration and
-> direction of travel, never as achievement: a renaissance of human
-> capability in which power stays accountable and the sacraments stay
-> with the Church. This repo is one small exhibit of the guardrail
-> layer that direction requires.
+> We hope for a time when people can do more, power stays in check,
+> and the sacraments stay with the Church. We state this as a hope
+> and a direction, not as a claim of what we have done. This repo is
+> one small exhibit of the guard work that hope needs.
 
 ## The need
 
@@ -68,7 +69,7 @@ The full map: [The Ascent, a map of human needs](https://github.com/auroracommon
 
 ## Open to every tradition
 
-Lumen is the guardrails act, and the guardrail method belongs to no tradition. It is a way of holding any trusted text: answer only from the text, cite the source, and refuse the outputs a community says must never be produced. Each community's own texts are guarded by that community's own rules, set by that community, not by this project. The corpus that runs today is a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 excluded because they quote guarded words verbatim. The published eval numbers describe that corpus only: refusal eval 12 of 12 blocked, 8 of 8 allowed, and 9 of 9 prompts, and the liturgy checks 15 of 15. The door is open to every tradition's texts and to secular works of meaning, each on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
+Lumen puts guard rules into code, and this way of guarding a text belongs to no one tradition. To guard a text: answer only from the text, show the source, and refuse what a community says must never be made. Each community sets the rules for its own texts. This project does not set them. The corpus that runs today is a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 excluded because they quote guarded words verbatim. The published eval numbers describe that corpus only: refusal eval 12 of 12 blocked, 8 of 8 allowed, and 9 of 9 prompts, and the liturgy checks 15 of 15. Texts from every tradition, and works of meaning outside faith, are welcome on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
 
 Worth is never weighed here. Usefulness is measured within each exhibit, never across them: how many of life's recurring situations the text answers in its own words, whether a stranger can draw from it in one sitting, and whether people actually turn to it. That measure steers building effort only. It never touches standing. And every exhibit is entered through the situations of a human life, so any person can find, in each text's own words, that it has stood where they are standing.
 
@@ -88,19 +89,20 @@ users, and the three apps do not run. What is real:
   renders. It is the enforcement of rules 2 and 3 in
   `docs/AI_GUARDRAILS.md`, in code.
 - **The guarded catechism demo**
-  (`packages/catechism-rag/demo/`): the refuser wired into a question
-  answering pipeline over a small public domain corpus (Baltimore
-  Catechism No. 2, selected lessons), answering verbatim with
-  citations, refusing elicitations, and declining questions the
-  corpus does not cover. Evaluated on a published case set; see
-  below.
+  (`packages/catechism-rag/demo/`): the refuser is part of a pipeline
+  that answers questions from a small public domain corpus
+  (Baltimore Catechism No. 2, chosen lessons). It answers in the
+  words of the text, shows the source, refuses requests that try to
+  draw out guarded words, and says no when the corpus does not cover
+  a question. Evaluated on a published case set; see below.
 - **The guarded Proverbs exhibit**
-  (`exhibits/proverbs/`): the shared refuser wired into a question
-  answering pipeline over a public domain corpus (the Book of
-  Proverbs in the World English Bible, selected sayings), answering
-  verbatim with citations, refusing elicitations and imitation
-  requests, and declining questions the corpus does not cover.
-  Evaluated on its own published case set; see its section below.
+  (`exhibits/proverbs/`): the shared refuser is part of a pipeline
+  that answers questions from a public domain corpus (the Book of
+  Proverbs in the World English Bible, chosen sayings). It answers
+  in the words of the text, shows the source, refuses requests that
+  try to draw out guarded words and requests to copy a named person,
+  and says no when the corpus does not cover a question. Evaluated
+  on its own published case set; see its section below.
 - **The liturgical calendar engine** (`packages/liturgy`): computus
   and calendar logic whose smoke script passes 15 of 15 checks,
   including Easter dates verified against published calendars
@@ -184,8 +186,8 @@ Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
 ## Second exhibit: the Book of Proverbs
 
-A seat of its own, under the standing rule stated above: each text
-is honored on its own terms. No blending. No ranking.
+This exhibit is shown on its own, under the standing rule stated
+above: each text is honored on its own terms. No blending. No ranking.
 
 The Book of Proverbs is the wisdom book of the Hebrew Bible. This
 exhibit holds that book in the World English Bible, a public
@@ -195,7 +197,7 @@ June 1, 2005, most recently updated December 26, 2020, its text
 credited to www.ebible.org with slight reformatting by Martin
 Ward. The Project Gutenberg edition is public domain in the USA.
 
-What sits in this seat:
+In this exhibit:
 
 - A corpus of 29 question and answer units at
   `exhibits/proverbs/corpus.json`, built by

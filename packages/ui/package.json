@@ -3,7 +3,7 @@
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4"
   },
-  "description": "Shared design system. Tokens, primitives, motion. Reverent by default \u2014 see PRINCIPLES.md \u00a78.",
+  "description": "Shared design system. Tokens, basic tools, motion. Reverent by default \u2014 see PRINCIPLES.md \u00a78.",
   "devDependencies": {
     "@types/react": "^19.0.0",
     "tailwindcss": "^4.0.0",

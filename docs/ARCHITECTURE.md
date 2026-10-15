@@ -15,7 +15,7 @@ Three Next.js apps + one Cloudflare Worker API, sharing eight packages, one sche
 
 | Package | Purpose |
 | --- | --- |
-| `@lumen/ui` | shadcn-based design system. Tokens, primitives, motion. |
+| `@lumen/ui` | shadcn-based design system. Tokens, basic tools, motion. |
 | `@lumen/liturgy` | Liturgical calendar engine — computus, seasons, ranks, color, readings. |
 | `@lumen/catechism-rag` | Doctrinal corpus retrieval. CCC, Vatican II, encyclicals, Doctors. Strict citation. |
 | `@lumen/charity-graph` | Donor → Need → Outcome graph. Audit-trail-first. |
