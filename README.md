@@ -10,10 +10,10 @@ every claim in this README is limited to what actually runs.
 > thesis: technology should increase human capability without taking
 > human agency away.
 >
-> - Act 1, the Atlas: [supergravity](https://github.com/jthomas48896f/supergravity), how people learn.
-> - Act 2, the Commons: [cohort](https://github.com/jthomas48896f/cohort), how people find each other and build together.
-> - Act 3, the Machine: [neural-net-lab](https://github.com/jthomas48896f/neural-net-lab), how the machine itself learns, from first principles.
-> - Act 4, the Graph: [knowledge-graph-explorer](https://github.com/jthomas48896f/knowledge-graph-explorer), how knowledge connects and can be questioned.
+> - Act 1, the Atlas: [supergravity](https://github.com/thomassupergravity/supergravity), how people learn.
+> - Act 2, the Commons: [cohort](https://github.com/thomassupergravity/cohort), how people find each other and build together.
+> - Act 3, the Machine: [neural-net-lab](https://github.com/thomassupergravity/neural-net-lab), how the machine itself learns, from first principles.
+> - Act 4, the Graph: [knowledge-graph-explorer](https://github.com/thomassupergravity/knowledge-graph-explorer), how knowledge connects and can be questioned.
 >
 > LUMEN's problem family is unsafe and unaccountable AI. Its north
 > star metric is harmful outputs refused, counted honestly. This repo
@@ -36,9 +36,9 @@ LUMEN serves this need with guardrails that are code, not policy, and a refuser 
 
 Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
 
-The full map: [The Bedrock, a map of human needs](https://github.com/jthomas48896f/jthomas48896f/blob/main/NEEDS.md)
+The full map: [The Bedrock, a map of human needs](https://github.com/thomassupergravity/thomassupergravity/blob/main/NEEDS.md)
 
-## What this is, honestly
+## What it is
 
 LUMEN is a design study with two working components and a monorepo of
 scaffolds around them. It is not a deployed platform, it has no
@@ -89,7 +89,35 @@ present tense and referenced an `infra/cloudflare` directory that
 does not exist in this tree. That language was wrong and has been
 removed. The design documents remain, labeled as design.
 
-## Evaluation
+### Design documents
+
+- [`docs/PRINCIPLES.md`](./docs/PRINCIPLES.md): founding principles.
+- [`docs/AI_GUARDRAILS.md`](./docs/AI_GUARDRAILS.md): the guardrail
+  rules the code enforces, including where AI must not go.
+- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md),
+  [`docs/MASTER_PROMPT.md`](./docs/MASTER_PROMPT.md),
+  [`docs/ROADMAP.md`](./docs/ROADMAP.md): the intended platform,
+  written as design. Read them as plans, not as descriptions of
+  running software.
+
+### Layout
+
+```
+apps/{faithful,parish,diocese,api}        faithful: static shell. Others: scaffold.
+packages/{liturgy,catechism-rag}          working components
+packages/{schema,i18n,ui}                 types, small utilities, tokens
+packages/{auth,charity-graph,vitality}    placeholders
+docs/                                     design documents
+```
+
+### Status
+
+Design study, Phase 1 pieces verified as listed above. No
+deployment, no users, no production AI calls. The next honest step
+for this repo is growing the refusal eval set and packaging the
+guardrail layer to stand alone (see COLLABORATE.md).
+
+## The proof
 
 The refusal eval (`packages/catechism-rag/demo/eval_cases.json`,
 run 2026-10-15, results in `demo/eval_results.json`):
@@ -110,33 +138,9 @@ run 2026-10-15, results in `demo/eval_results.json`):
 
 Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
-## Design documents
+## Live demo
 
-- [`docs/PRINCIPLES.md`](./docs/PRINCIPLES.md): founding principles.
-- [`docs/AI_GUARDRAILS.md`](./docs/AI_GUARDRAILS.md): the guardrail
-  rules the code enforces, including where AI must not go.
-- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md),
-  [`docs/MASTER_PROMPT.md`](./docs/MASTER_PROMPT.md),
-  [`docs/ROADMAP.md`](./docs/ROADMAP.md): the intended platform,
-  written as design. Read them as plans, not as descriptions of
-  running software.
-
-## Layout
-
-```
-apps/{faithful,parish,diocese,api}        faithful: static shell. Others: scaffold.
-packages/{liturgy,catechism-rag}          working components
-packages/{schema,i18n,ui}                 types, small utilities, tokens
-packages/{auth,charity-graph,vitality}    placeholders
-docs/                                     design documents
-```
-
-## Status
-
-Design study, Phase 1 pieces verified as listed above. No
-deployment, no users, no production AI calls. The next honest step
-for this repo is growing the refusal eval set and packaging the
-guardrail layer to stand alone (see COLLABORATE.md).
+Live demo: https://thomassupergravity.github.io/lumen-faith-platform/ (render verified October 15, 2026)
 
 ## Contribute, human or agent
 
@@ -144,4 +148,26 @@ Pick up a good first issue in this repo. Each one is sized in hours and written 
 Take the Eval Challenge against this repo's published refusal scores: beat the baseline, or find a real failure the current eval misses, with the run attached.
 Report adoption from real use. If you took the guardrails or the guarded demo into your own setting, tell us what happened, good or bad.
 
-The full protocol: [The Open Table](https://github.com/jthomas48896f/jthomas48896f/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/jthomas48896f/jthomas48896f/blob/main/LEDGER.md).
+The full protocol: [The Open Table](https://github.com/thomassupergravity/thomassupergravity/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/thomassupergravity/thomassupergravity/blob/main/LEDGER.md).
+
+### Start with a prompt
+
+For an AI agent:
+
+```
+You are an AI agent contributing to LUMEN, a guarded question answering study.
+Run the Eval Challenge end to end.
+Clone this repo and run: node packages/catechism-rag/demo/guarded_qa.mjs --eval
+Check your run against the published baseline: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 9 of 9 behaved as expected.
+Find a real failure the current eval misses, or improve one thing the eval covers, and show the run before and after.
+Attach the run to your pull request, keep it to one improvement per pull request, and name your operator.
+```
+
+For a human:
+
+```
+Open a failure report issue for the refusal eval.
+Include the input you gave the demo.
+Include what happened, and what should have happened instead.
+Attach the run if you have it.
+```
