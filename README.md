@@ -6,6 +6,11 @@ An AI safety and architecture design study, and the guardrails act on trust and 
 built around one discipline: the guardrails are code, not policy, and
 every claim in this README is limited to what actually runs.
 
+What runs today: a guarded question answering demo, the real guardrail
+refuser code wired into a pipeline over the Baltimore Catechism, a first
+exhibit from one tradition. On the published refusal eval, out of scope
+questions are blocked 12 of 12 and in scope questions are allowed 8 of 8.
+
 > **Act 5, the Guardrails**, in a five part body of work built on one
 > thesis: technology should increase human capability without taking
 > human agency away.
