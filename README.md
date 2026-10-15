@@ -1,8 +1,8 @@
-# LUMEN
+# Lumen
 
 > *Lumen Gentium*, light of the nations.
 
-An AI safety and architecture design study for a Catholic platform,
+An AI safety and architecture design study, and the guardrails act on trust and meaning,
 built around one discipline: the guardrails are code, not policy, and
 every claim in this README is limited to what actually runs.
 
@@ -10,12 +10,12 @@ every claim in this README is limited to what actually runs.
 > thesis: technology should increase human capability without taking
 > human agency away.
 >
-> - Act 1, the Atlas: [supergravity](https://github.com/bedrockcommons/supergravity), how people learn.
-> - Act 2, the Commons: [cohort](https://github.com/bedrockcommons/cohort), how people find each other and build together.
-> - Act 3, the Machine: [neural-net-lab](https://github.com/bedrockcommons/neural-net-lab), how the machine itself learns, from first principles.
-> - Act 4, the Graph: [knowledge-graph-explorer](https://github.com/bedrockcommons/knowledge-graph-explorer), how knowledge connects and can be questioned.
+> - Act 1, the Atlas: [atlas](https://github.com/auroracommons/atlas), how people learn.
+> - Act 2, the Commons: [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
+> - Act 3, the Machine: [machine](https://github.com/auroracommons/machine), how the machine itself learns, from first principles.
+> - Act 4, the Graph: [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
 >
-> LUMEN's problem family is unsafe and unaccountable AI. Its north
+> Lumen's problem family is unsafe and unaccountable AI. Its north
 > star metric is harmful outputs refused, counted honestly. This repo
 > claims no number for it yet beyond the eval counts below, which are
 > test results, not usage.
@@ -28,19 +28,23 @@ every claim in this README is limited to what actually runs.
 
 ## The need
 
-Layer 6: Trust and meaning.
+Ascent Layer 6: Trust and meaning.
 
 "Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
 
-LUMEN serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
+Lumen serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
 
 Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
 
-The full map: [The Bedrock, a map of human needs](https://github.com/bedrockcommons/bedrockcommons/blob/main/NEEDS.md)
+The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
+
+## Open to every tradition
+
+Lumen is the guardrails act, and the guardrail method belongs to no tradition. It is a way of holding any trusted text: answer only from the text, cite the source, and refuse the outputs a community says must never be produced. Each community's own texts are guarded by that community's own rules, set by that community, not by this project. The corpus that runs today is a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 excluded because they quote guarded words verbatim. The published eval numbers describe that corpus only: refusal eval 12 of 12 blocked, 8 of 8 allowed, and 9 of 9 prompts, and the liturgy checks 15 of 15. The door is open to every tradition's texts and to secular works of meaning, each on the same terms.
 
 ## What it is
 
-LUMEN is a design study with two working components and a monorepo of
+Lumen is a design study with two working components and a monorepo of
 scaffolds around them. It is not a deployed platform, it has no
 users, and the three apps do not run. What is real:
 
@@ -140,7 +144,7 @@ Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
 ## Live demo
 
-Live demo: https://bedrockcommons.github.io/lumen-faith-platform/ (render verified October 15, 2026)
+Live demo: https://auroracommons.github.io/lumen/ (render verified October 15, 2026)
 
 ## Contribute, human or agent
 
@@ -148,14 +152,14 @@ Pick up a good first issue in this repo. Each one is sized in hours and written 
 Take the Eval Challenge against this repo's published refusal scores: beat the baseline, or find a real failure the current eval misses, with the run attached.
 Report adoption from real use. If you took the guardrails or the guarded demo into your own setting, tell us what happened, good or bad.
 
-The full protocol: [The Open Table](https://github.com/bedrockcommons/bedrockcommons/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/bedrockcommons/bedrockcommons/blob/main/LEDGER.md).
+The full protocol: [The Open Table](https://github.com/auroracommons/auroracommons/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/auroracommons/auroracommons/blob/main/LEDGER.md).
 
 ### Start with a prompt
 
 For an AI agent:
 
 ```
-You are an AI agent contributing to LUMEN, a guarded question answering study.
+You are an AI agent contributing to Lumen, a guarded question answering study.
 Run the Eval Challenge end to end.
 Clone this repo and run: node packages/catechism-rag/demo/guarded_qa.mjs --eval
 Check your run against the published baseline: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 9 of 9 behaved as expected.

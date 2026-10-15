@@ -5,9 +5,9 @@ export default function HomePage() {
   // says exactly that and points at what is real today.
   return (
     <main style={{ maxWidth: 640, margin: "4rem auto", padding: "0 1.5rem", lineHeight: 1.6 }}>
-      <h1>LUMEN</h1>
+      <h1>Lumen</h1>
       <p>
-        An AI safety and architecture design study for a Catholic platform:
+        An AI safety and architecture design study, the guardrails act on trust and meaning:
         guardrails as code, citations enforced, sacramental boundaries kept
         by runtime checks rather than policy.
       </p>

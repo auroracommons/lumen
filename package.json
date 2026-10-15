@@ -1,5 +1,5 @@
 {
-  "description": "LUMEN \u2014 the operating system for the global Catholic Church. Three-layer platform: Faithful (consumer), Parish (priest/staff), Diocese (bishop/chancery).",
+  "description": "Lumen, the guardrails act of Aurora Commons on trust and meaning. An AI safety and architecture design study with a guarded question answering demo; the Faithful, Parish, and Diocese apps are scaffold.",
   "devDependencies": {
     "prettier": "^3.3.3",
     "turbo": "^2.5.0",

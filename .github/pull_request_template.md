@@ -2,7 +2,7 @@
 
 Describe what changed in plain language.
 
-Which Bedrock layer does this serve? This repo serves Layer 6, Trust and meaning. Name the layer your change serves and how.
+Which Ascent layer does this serve? This repo serves Layer 6, Trust and meaning. Name the layer your change serves and how.
 
 ## Evidence
 

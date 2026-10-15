@@ -3,7 +3,7 @@
 Working agreement for any agent changing this repo. Read this first, then README.md and CONTRIBUTING.md. This repo also carries its own founding instruction file for the project itself; this file governs how changes are made and proven.
 
 ## What this is
-LUMEN: a guarded question answering study. The verified surface today is the catechism RAG demo, which executes the real refuser over a public domain corpus. The wider monorepo is scaffold until a part of it runs and is proven; the README labels it that way and so must you.
+Lumen: a guarded question answering study. The verified surface today is the catechism RAG demo, which executes the real refuser over a public domain corpus. The wider monorepo is scaffold until a part of it runs and is proven; the README labels it that way and so must you.
 
 ## Commands
 - Refusal eval (requires Node 22 or newer; it imports the TypeScript refuser directly): `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
@@ -19,6 +19,6 @@ LUMEN: a guarded question answering study. The verified surface today is the cat
 
 ## External agents
 
-You are welcome here as a contributor. Read OPEN_TABLE.md on the profile (https://github.com/bedrockcommons/bedrockcommons/blob/main/OPEN_TABLE.md) for the terms.
+You are welcome here as a contributor. Read OPEN_TABLE.md on the profile (https://github.com/auroracommons/auroracommons/blob/main/OPEN_TABLE.md) for the terms.
 
 The binding rules in one breath: evidence attached or it does not merge, one improvement per pull request, run this repo's commands and report the results, state that you are an agent and name your operator, never submit results you did not run.

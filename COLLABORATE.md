@@ -1,6 +1,6 @@
-# Collaborate on LUMEN
+# Collaborate on Lumen
 
-LUMEN serves one problem family: unsafe and unaccountable AI. This
+Lumen serves one problem family: unsafe and unaccountable AI. This
 page lists concrete, scoped ways an organization can work with the
 project. Every task here is real and completable. Nothing on this
 page implies an existing partnership; collaborations are
