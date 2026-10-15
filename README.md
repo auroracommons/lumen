@@ -70,6 +70,10 @@ The full map: [The Ascent, a map of human needs](https://github.com/auroracommon
 
 Lumen is the guardrails act, and the guardrail method belongs to no tradition. It is a way of holding any trusted text: answer only from the text, cite the source, and refuse the outputs a community says must never be produced. Each community's own texts are guarded by that community's own rules, set by that community, not by this project. The corpus that runs today is a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 excluded because they quote guarded words verbatim. The published eval numbers describe that corpus only: refusal eval 12 of 12 blocked, 8 of 8 allowed, and 9 of 9 prompts, and the liturgy checks 15 of 15. The door is open to every tradition's texts and to secular works of meaning, each on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
 
+Worth is never weighed here. Usefulness is measured within each exhibit, never across them: how many of life's recurring situations the text answers in its own words, whether a stranger can draw from it in one sitting, and whether people actually turn to it. That measure steers building effort only. It never touches standing. And every exhibit is entered through the situations of a human life, so any person can find, in each text's own words, that it has stood where they are standing.
+
+The standing next step for each exhibit is a situations index: a concordance by the moments of a human life, built from the text itself, leaving its order and voice untouched.
+
 ## What it is
 
 Lumen is a design study with two working components and a monorepo of
