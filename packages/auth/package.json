@@ -1,0 +1,17 @@
+{
+  "description": "Auth helpers. Anonymous-first for Threshold (no login wall in front of seekers). Clerk or Auth.js downstream.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/auth",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'auth: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

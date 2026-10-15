@@ -1,0 +1,12 @@
+{
+  "description": "Lumen / Diocese \u2014 bishop + chancery dashboard. Scaffold pending Pass 4+. See docs/MASTER_PROMPT.md \u00a73c.",
+  "name": "@lumen/diocese",
+  "private": true,
+  "scripts": {
+    "build": "echo 'diocese: scaffold pending'",
+    "dev": "echo 'diocese: scaffold pending \u2014 see ROADMAP'",
+    "lint": "echo 'diocese: scaffold pending'",
+    "typecheck": "echo 'diocese: scaffold pending'"
+  },
+  "version": "0.0.0"
+}

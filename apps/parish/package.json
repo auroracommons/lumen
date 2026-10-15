@@ -1,0 +1,12 @@
+{
+  "description": "Lumen / Parish \u2014 priest + staff co-pilot. Scaffold pending Pass 4+. See docs/MASTER_PROMPT.md \u00a73b.",
+  "name": "@lumen/parish",
+  "private": true,
+  "scripts": {
+    "build": "echo 'parish: scaffold pending'",
+    "dev": "echo 'parish: scaffold pending \u2014 see ROADMAP'",
+    "lint": "echo 'parish: scaffold pending'",
+    "typecheck": "echo 'parish: scaffold pending'"
+  },
+  "version": "0.0.0"
+}

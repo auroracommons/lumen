@@ -1,0 +1,12 @@
+{
+  "description": "LUMEN API \u2014 Hono on Cloudflare Workers. Scaffold pending Pass 4+.",
+  "name": "@lumen/api",
+  "private": true,
+  "scripts": {
+    "build": "echo 'api: scaffold pending'",
+    "dev": "echo 'api: scaffold pending \u2014 see ROADMAP'",
+    "lint": "echo 'api: scaffold pending'",
+    "typecheck": "echo 'api: scaffold pending'"
+  },
+  "version": "0.0.0"
+}

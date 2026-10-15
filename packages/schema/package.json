@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "description": "Shared Zod schemas + inferred TypeScript types. Single source of truth for cross-app data shapes.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/schema",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'schema: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

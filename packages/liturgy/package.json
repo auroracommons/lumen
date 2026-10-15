@@ -1,0 +1,18 @@
+{
+  "description": "Liturgical calendar engine. Computus, seasons, ranks, color, transferred feasts, universal + proper calendars.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/liturgy",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'liturgy: lint stub'",
+    "test": "echo 'liturgy: no tests yet'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

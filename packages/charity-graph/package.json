@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@lumen/schema": "workspace:*"
+  },
+  "description": "Donor \u2192 Need \u2192 Outcome graph. Audit trail is the product, not a feature.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/charity-graph",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'charity-graph: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

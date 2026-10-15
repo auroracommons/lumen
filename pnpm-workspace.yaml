@@ -1,0 +1,11 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+allowBuilds:
+  sharp: set this to true or false
+
+# Allow build scripts for trusted optional native deps.
+# sharp powers Next.js production image optimization.
+onlyBuiltDependencies:
+  - sharp

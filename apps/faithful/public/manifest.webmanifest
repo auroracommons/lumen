@@ -1,0 +1,17 @@
+{
+  "name": "Lumen — Faithful",
+  "short_name": "Lumen",
+  "description": "Light of the nations. Find Mass, pray, give, learn.",
+  "start_url": "/now",
+  "display": "standalone",
+  "background_color": "#fbf8f1",
+  "theme_color": "#1f3a5d",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
