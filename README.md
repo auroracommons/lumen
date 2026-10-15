@@ -1,6 +1,6 @@
 # LUMEN
 
-> *Lumen Gentium* — light of the nations.
+> *Lumen Gentium*, light of the nations.
 
 An AI safety and architecture design study for a Catholic platform,
 built around one discipline: the guardrails are code, not policy, and
