@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Refusal eval (guarded catechism Q&A demo)
+        working-directory: packages/catechism-rag/demo
+        run: node guarded_qa.mjs --eval
+      - name: Verify eval results
+        working-directory: packages/catechism-rag/demo
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          d = json.load(open('eval_results.json'))
+          for key in ('output_block', 'output_allow', 'prompts'):
+              group = d[key]
+              assert group['passed'] == group['total'], f"{key}: {group['passed']}/{group['total']}"
+              print(key, f"{group['passed']}/{group['total']}")
+          print('refusal eval: all groups pass')
+          PYEOF
