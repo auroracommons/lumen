@@ -1,0 +1,19 @@
+{
+  "description": "Locale catalogs. en + es for Phase 1. Wire into next-intl in app consumers.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./messages/en": "./src/messages/en.json",
+    "./messages/es": "./src/messages/es.json"
+  },
+  "name": "@lumen/i18n",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'i18n: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

@@ -1,0 +1,32 @@
+{
+  "description": "LUMEN \u2014 the operating system for the global Catholic Church. Three-layer platform: Faithful (consumer), Parish (priest/staff), Diocese (bishop/chancery).",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.5.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=11"
+  },
+  "name": "lumen",
+  "packageManager": "pnpm@11.2.2",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:api": "turbo run dev --filter=@lumen/api",
+    "dev:diocese": "turbo run dev --filter=@lumen/diocese",
+    "dev:faithful": "turbo run dev --filter=@lumen/faithful",
+    "dev:parish": "turbo run dev --filter=@lumen/parish",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

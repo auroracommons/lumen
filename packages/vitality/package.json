@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@lumen/schema": "workspace:*"
+  },
+  "description": "Parish vitality index. Multi-factor (sacramental rate, attendance trend, engagement, finance, demographics, vocations, charity throughput). Time-windowed.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/vitality",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'vitality: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

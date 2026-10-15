@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "@lumen/schema": "workspace:*"
+  },
+  "description": "Doctrinal RAG over CCC, Vatican II, encyclicals, magisterial corpus, Doctors. Strict citation enforcement. Sacrament-substitution refusal at the call site.",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "name": "@lumen/catechism-rag",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'catechism-rag: lint stub'",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

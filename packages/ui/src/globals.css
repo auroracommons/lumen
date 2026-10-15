@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ─── LUMEN tokens (source of truth) ──────────────────────────────────────
+   Mirrors packages/ui/src/tokens.ts. Keep them in lockstep.
+   Brand rationale: PRINCIPLES.md §8 — warmth, weight, restraint. */
+@theme {
+  /* Parchment — warm whites */
+  --color-parchment-50:  #fbf8f1;
+  --color-parchment-100: #f5efe1;
+  --color-parchment-200: #ebe1c8;
+  --color-parchment-300: #dac9a3;
+  --color-parchment-400: #c4ad7c;
+  --color-parchment-500: #9c855a;
+
+  /* Sanctuary — stained-glass blues */
+  --color-sanctuary-400: #5b7fa8;
+  --color-sanctuary-500: #3f628f;
+  --color-sanctuary-600: #2c4d76;
+  --color-sanctuary-700: #1f3a5d;
+  --color-sanctuary-800: #162a44;
+  --color-sanctuary-900: #0d1a2c;
+
+  /* Brass — accent gold */
+  --color-brass-300: #e4cf8b;
+  --color-brass-500: #c8a651;
+  --color-brass-700: #9a7d34;
+
+  /* Oxblood — liturgical red, deep */
+  --color-oxblood-500: #8b2c2c;
+  --color-oxblood-700: #5e1a1a;
+  --color-oxblood-800: #3f0f0f;
+
+  /* Liturgical canonicals */
+  --color-liturgical-violet: #5d3a85;
+  --color-liturgical-rose:   #d49bb1;
+  --color-liturgical-green:  #4f7d3c;
+  --color-liturgical-white:  #fbf8f1;
+  --color-liturgical-red:    #8b2c2c;
+  --color-liturgical-black:  #0d1a2c;
+  --color-liturgical-gold:   #c8a651;
+
+  /* Type stacks */
+  --font-serif:   "Source Serif 4", "Source Serif Pro", "Cormorant Garamond", Georgia, serif;
+  --font-sans:    Inter, "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-display: Cinzel, "Cormorant SC", Trajan, serif;
+
+  /* Motion — bell-decay, not rubber-band */
+  --ease-bell:      cubic-bezier(0.18, 0.9, 0.32, 1);
+  --ease-bell-soft: cubic-bezier(0.2,  0.7, 0.4,  1);
+  --ease-vespers:   cubic-bezier(0.4,  0,   0.2,  1);
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+  --bg:    var(--color-parchment-50);
+  --fg:    var(--color-sanctuary-900);
+  --muted: var(--color-sanctuary-700);
+  --rule:  var(--color-parchment-200);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg:    var(--color-sanctuary-900);
+    --fg:    var(--color-parchment-100);
+    --muted: var(--color-parchment-300);
+    --rule:  var(--color-sanctuary-800);
+  }
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Sturdier sans for chrome */
+button, input, select, textarea, nav, [data-chrome] {
+  font-family: var(--font-sans);
+}
+
+/* Display face only for moments of reverence — explicit opt-in */
+.font-display, [data-reverent] {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+/* Hairline rule — softer than border-gray */
+.rule { border-color: var(--rule); }
+
+/* Respect reduced motion — bells fall silent */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Selection — brass on parchment */
+::selection {
+  background: var(--color-brass-300);
+  color: var(--color-sanctuary-900);
+}

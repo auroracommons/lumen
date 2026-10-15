@@ -1,0 +1,29 @@
+@import "@lumen/ui/globals.css";
+
+/* Faithful-specific overrides go below. Keep this small — defer to the shared system. */
+
+/* The Now screen wants a settled, almost devotional weight. */
+body {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  body { font-size: 18px; }
+}
+
+/* Soft entry animation on first paint — bell-decay, single play. */
+@keyframes lumen-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lumen-rise {
+  animation: lumen-rise 640ms var(--ease-bell) both;
+}
+
+.lumen-rise-delayed-1 { animation-delay: 80ms; }
+.lumen-rise-delayed-2 { animation-delay: 160ms; }
+.lumen-rise-delayed-3 { animation-delay: 240ms; }
+.lumen-rise-delayed-4 { animation-delay: 320ms; }
