@@ -30,14 +30,16 @@ refuser code wired into a pipeline over the Baltimore Catechism, a first
 exhibit from one tradition. On the published refusal eval, out of scope
 questions are blocked 12 of 12 and in scope questions are allowed 8 of 8.
 
-> **Act 5, the Guardrails**, in a five part body of work built on one
-> thesis: technology should increase human capability without taking
-> human agency away.
+> **Lumen, Ascent Layer 6 (trust and meaning)**, in a seven layer body
+> of work built on one thesis: technology should increase human
+> capability without taking human agency away.
 >
-> - Act 1, the Atlas: [atlas](https://github.com/auroracommons/atlas), how people learn.
-> - Act 2, the Commons: [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
-> - Act 3, the Machine: [machine](https://github.com/auroracommons/machine), how the machine itself learns, from first principles.
-> - Act 4, the Graph: [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
+> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
+> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
+> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
+> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
+> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
+> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, from first principles.
 >
 > Lumen's problem family is unsafe and unaccountable AI. Its north
 > star metric is harmful outputs refused, counted honestly. This repo
@@ -204,7 +206,9 @@ Attach the run if you have it.
 <p>The research under this layer: <a href="https://auroracommons.github.io/auroracommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
 
 <footer class="commons-footer">
-  <p>One rule: raise the floor beneath everyone.</p>
+  <p>Aurora Commons addresses the hierarchy of human needs through open source.</p>
+  <p>Motto: Stand on the shoulders of giants.</p>
+  <p>One rule: Raise the floor beneath everyone.</p>
   <p>Advised by Groundskeeper.</p>
   <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
 </footer>
