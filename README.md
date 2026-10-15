@@ -26,6 +26,18 @@ every claim in this README is limited to what actually runs.
 > with the Church. This repo is one small exhibit of the guardrail
 > layer that direction requires.
 
+## The need
+
+Layer 6: Trust and meaning.
+
+"Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
+
+LUMEN serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
+
+Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
+
+The full map: [The Bedrock, a map of human needs](https://github.com/jthomas48896f/jthomas48896f/blob/main/NEEDS.md)
+
 ## What this is, honestly
 
 LUMEN is a design study with two working components and a monorepo of
