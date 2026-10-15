@@ -125,6 +125,17 @@ deployment, no users, no production AI calls. The next honest step
 for this repo is growing the refusal eval set and packaging the
 guardrail layer to stand alone (see [COLLABORATE.md](./COLLABORATE.md)).
 
+## The two exhibits, in one table
+
+<!-- exhibits:begin -->
+| Exhibit | Units in the corpus | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
+| --- | --- | --- | --- | --- |
+| Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 9 of 9 |
+| Book of Proverbs, World English Bible | 29 | 12 of 12 | 8 of 8 | 10 of 10 |
+
+Key: units are the passages in each exhibit's corpus file. Refused, allowed, and prompts are the three scored blocks of each exhibit's eval results file, both in this repository. The two exhibits are measured within themselves, never against each other.
+<!-- exhibits:end -->
+
 ## The proof
 
 The refusal eval (`packages/catechism-rag/demo/eval_cases.json`,
