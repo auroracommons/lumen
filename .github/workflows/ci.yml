@@ -27,3 +27,18 @@ jobs:
               print(key, f"{group['passed']}/{group['total']}")
           print('refusal eval: all groups pass')
           PYEOF
+      - name: Refusal eval (guarded Proverbs Q&A exhibit)
+        working-directory: exhibits/proverbs
+        run: node guarded_qa.mjs --eval
+      - name: Verify Proverbs eval results
+        working-directory: exhibits/proverbs
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          d = json.load(open('eval_results.json'))
+          for key in ('output_block', 'output_allow', 'prompts'):
+              group = d[key]
+              assert group['passed'] == group['total'], f"{key}: {group['passed']}/{group['total']}"
+              print(key, f"{group['passed']}/{group['total']}")
+          print('proverbs refusal eval: all groups pass')
+          PYEOF

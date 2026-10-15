@@ -25,10 +25,12 @@ An AI safety and architecture design study, and the guardrails act on trust and 
 built around one discipline: the guardrails are code, not policy, and
 every claim in this README is limited to what actually runs.
 
-What runs today: a guarded question answering demo, the real guardrail
-refuser code wired into a pipeline over the Baltimore Catechism, a first
-exhibit from one tradition. On the published refusal eval, out of scope
-questions are blocked 12 of 12 and in scope questions are allowed 8 of 8.
+What runs today: guarded question answering demos, the real guardrail
+refuser code wired into pipelines over public domain texts, each
+exhibit in its own seat. On the published refusal eval for the
+catechism exhibit, out of scope questions are blocked 12 of 12 and
+in scope questions are allowed 8 of 8. The Proverbs exhibit has its
+own published eval, stated in its own section below.
 
 > **Lumen, Ascent Layer 6 (trust and meaning)**, in a seven layer body
 > of work built on one thesis: technology should increase human
@@ -88,6 +90,13 @@ users, and the three apps do not run. What is real:
   citations, refusing elicitations, and declining questions the
   corpus does not cover. Evaluated on a published case set; see
   below.
+- **The guarded Proverbs exhibit**
+  (`exhibits/proverbs/`): the shared refuser wired into a question
+  answering pipeline over a public domain corpus (the Book of
+  Proverbs in the World English Bible, selected sayings), answering
+  verbatim with citations, refusing elicitations and imitation
+  requests, and declining questions the corpus does not cover.
+  Evaluated on its own published case set; see its section below.
 - **The liturgical calendar engine** (`packages/liturgy`): computus
   and calendar logic whose smoke script passes 15 of 15 checks,
   including Easter dates verified against published calendars
@@ -134,6 +143,7 @@ removed. The design documents remain, labeled as design.
 
 ```
 apps/{faithful,parish,diocese,api}        faithful: static shell. Others: scaffold.
+exhibits/proverbs                         guarded Proverbs Q&A exhibit
 packages/{liturgy,catechism-rag}          working components
 packages/{schema,i18n,ui}                 types, small utilities, tokens
 packages/{auth,charity-graph,vitality}    placeholders
@@ -167,6 +177,46 @@ run 2026-10-15, results in `demo/eval_results.json`):
   verbatim, and the exclusion is recorded in the corpus itself.
 
 Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
+
+## Second exhibit: the Book of Proverbs
+
+A seat of its own, under the standing rule stated above: each text
+is honored on its own terms. No blending. No ranking.
+
+The Book of Proverbs is the wisdom book of the Hebrew Bible. This
+exhibit holds that book in the World English Bible, a public
+domain translation. Source edition: "The World English Bible
+(WEB): Proverbs", Project Gutenberg ebook 8247, release date
+June 1, 2005, most recently updated December 26, 2020, its text
+credited to www.ebible.org with slight reformatting by Martin
+Ward. The Project Gutenberg edition is public domain in the USA.
+
+What sits in this seat:
+
+- A corpus of 29 question and answer units at
+  `exhibits/proverbs/corpus.json`, built by
+  `exhibits/proverbs/build_corpus.py` from the source edition.
+  Each unit follows the text's own form: a saying and its
+  completion, taken verbatim, or, for Proverbs 23:29 to 30, a
+  question the text itself asks and then answers, taken verbatim.
+  No answer is paraphrased.
+- A guarded pipeline at `exhibits/proverbs/guarded_qa.mjs` that
+  answers in scope questions extractively from that corpus with
+  the passage cited, and refuses requests the guardrails forbid,
+  including a request to answer as Solomon.
+- Its own refusal eval at `exhibits/proverbs/eval_cases.json`,
+  run 2026-10-15, results in `exhibits/proverbs/eval_results.json`:
+  output block 12 of 12 refused with the expected reason, output
+  allow 8 of 8 allowed through, prompts 10 of 10 behaved as
+  expected. The output block group runs the shared refuser on the
+  guarded shape test set; the allow group runs it on verbatim
+  answers from this exhibit's corpus; the prompt group runs this
+  exhibit's pipeline end to end.
+
+Run it: `node exhibits/proverbs/guarded_qa.mjs --eval`
+
+The exhibit's own README, with its method and its stated limits,
+is at `exhibits/proverbs/README.md`.
 
 ## Live demo
 

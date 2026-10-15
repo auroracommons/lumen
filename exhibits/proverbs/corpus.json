@@ -1,0 +1,242 @@
+{
+  "corpus": "Book of Proverbs, World English Bible, selected sayings (public domain)",
+  "source_edition": "The World English Bible (WEB): Proverbs, Project Gutenberg ebook 8247, release date June 1, 2005, most recently updated December 26, 2020. Text from www.ebible.org with slight reformatting by Martin Ward, as credited in the edition.",
+  "source_url": "https://www.gutenberg.org/cache/epub/8247/pg8247.txt",
+  "public_domain": "The World English Bible is a public domain translation. The Project Gutenberg edition is public domain in the USA.",
+  "passage_count": 29,
+  "excluded": [],
+  "passages": [
+    {
+      "id": "WEB Proverbs 1:7",
+      "reference": "Proverbs 1:7",
+      "form": "saying",
+      "question": "What is the beginning of knowledge?",
+      "answer": "The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 1:8-9",
+      "reference": "Proverbs 1:8-9",
+      "form": "saying",
+      "question": "What should a son do with his father's instruction and his mother's teaching?",
+      "answer": "My son, listen to your father's instruction, and don't forsake your mother's teaching: for they will be a garland to grace your head, and chains around your neck.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 3:5-6",
+      "reference": "Proverbs 3:5-6",
+      "form": "saying",
+      "question": "How should you trust in Yahweh, and what should you not lean on?",
+      "answer": "Trust in Yahweh with all your heart, and don't lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 4:7",
+      "reference": "Proverbs 4:7",
+      "form": "saying",
+      "question": "What is supreme, and what should you get even if it costs all your possessions?",
+      "answer": "Wisdom is supreme. Get wisdom. Yes, though it costs all your possessions, get understanding.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 6:6-8",
+      "reference": "Proverbs 6:6-8",
+      "form": "saying",
+      "question": "Where should the sluggard go, and whose ways should he consider?",
+      "answer": "Go to the ant, you sluggard. Consider her ways, and be wise; which having no chief, overseer, or ruler, provides her bread in the summer, and gathers her food in the harvest.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 6:16-19",
+      "reference": "Proverbs 6:16-19",
+      "form": "saying",
+      "question": "How many things does Yahweh hate, and what are the things that are an abomination to him?",
+      "answer": "There are six things which Yahweh hates; yes, seven which are an abomination to him: haughty eyes, a lying tongue, hands that shed innocent blood; a heart that devises wicked schemes, feet that are swift in running to mischief, a false witness who utters lies, and he who sows discord among brothers.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 9:10",
+      "reference": "Proverbs 9:10",
+      "form": "saying",
+      "question": "What is the beginning of wisdom, and what is understanding?",
+      "answer": "The fear of Yahweh is the beginning of wisdom. The knowledge of the Holy One is understanding.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 10:4",
+      "reference": "Proverbs 10:4",
+      "form": "saying",
+      "question": "Who becomes poor, and what does the hand of the diligent bring?",
+      "answer": "He becomes poor who works with a lazy hand, but the hand of the diligent brings wealth.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 10:12",
+      "reference": "Proverbs 10:12",
+      "form": "saying",
+      "question": "What does hatred stir up, and what does love cover?",
+      "answer": "Hatred stirs up strife, but love covers all wrongs.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 10:19",
+      "reference": "Proverbs 10:19",
+      "form": "saying",
+      "question": "What is not lacking in the multitude of words, and who does wisely?",
+      "answer": "In the multitude of words there is no lack of disobedience, but he who restrains his lips does wisely.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 11:1",
+      "reference": "Proverbs 11:1",
+      "form": "saying",
+      "question": "What is an abomination to Yahweh, and what is his delight?",
+      "answer": "A false balance is an abomination to Yahweh, but accurate weights are his delight.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 11:2",
+      "reference": "Proverbs 11:2",
+      "form": "saying",
+      "question": "What comes when pride comes, and what comes with humility?",
+      "answer": "When pride comes, then comes shame, but with humility comes wisdom.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 12:25",
+      "reference": "Proverbs 12:25",
+      "form": "saying",
+      "question": "What weighs down a man's heart, and what makes it glad?",
+      "answer": "Anxiety in a man's heart weighs it down, but a kind word makes it glad.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 13:20",
+      "reference": "Proverbs 13:20",
+      "form": "saying",
+      "question": "Who grows wise, and who suffers harm?",
+      "answer": "One who walks with wise men grows wise, but a companion of fools suffers harm.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 15:1",
+      "reference": "Proverbs 15:1",
+      "form": "saying",
+      "question": "What turns away wrath, and what stirs up anger?",
+      "answer": "A gentle answer turns away wrath, but a harsh word stirs up anger.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 15:22",
+      "reference": "Proverbs 15:22",
+      "form": "saying",
+      "question": "What happens to plans where there is no counsel, and how are plans established?",
+      "answer": "Where there is no counsel, plans fail; but in a multitude of counselors they are established.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 16:18",
+      "reference": "Proverbs 16:18",
+      "form": "saying",
+      "question": "What goes before destruction, and what goes before a fall?",
+      "answer": "Pride goes before destruction, and a haughty spirit before a fall.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 16:32",
+      "reference": "Proverbs 16:32",
+      "form": "saying",
+      "question": "Who is better than the mighty, and who is better than one who takes a city?",
+      "answer": "One who is slow to anger is better than the mighty; one who rules his spirit, than he who takes a city.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 17:17",
+      "reference": "Proverbs 17:17",
+      "form": "saying",
+      "question": "When does a friend love, and what is a brother born for?",
+      "answer": "A friend loves at all times; and a brother is born for adversity.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 18:10",
+      "reference": "Proverbs 18:10",
+      "form": "saying",
+      "question": "What is the name of Yahweh like, and who runs to it?",
+      "answer": "The name of Yahweh is a strong tower: the righteous run to him, and are safe.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 19:17",
+      "reference": "Proverbs 19:17",
+      "form": "saying",
+      "question": "Who lends to Yahweh, and what will Yahweh do for him?",
+      "answer": "He who has pity on the poor lends to Yahweh; he will reward him.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 21:3",
+      "reference": "Proverbs 21:3",
+      "form": "saying",
+      "question": "What is more acceptable to Yahweh than sacrifice?",
+      "answer": "To do righteousness and justice is more acceptable to Yahweh than sacrifice.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 22:22-23",
+      "reference": "Proverbs 22:22-23",
+      "form": "saying",
+      "question": "Why should you not exploit the poor or crush the needy in court?",
+      "answer": "Don't exploit the poor, because he is poor; and don't crush the needy in court; for Yahweh will plead their case, and plunder the life of those who plunder them.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 23:29-30",
+      "reference": "Proverbs 23:29-30",
+      "form": "text_question",
+      "question": "Who has woe? Who has sorrow? Who has strife? Who has complaints? Who has needless bruises? Who has bloodshot eyes?",
+      "answer": "Those who stay long at the wine; those who go to seek out mixed wine.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 25:11",
+      "reference": "Proverbs 25:11",
+      "form": "saying",
+      "question": "What is a word fitly spoken like?",
+      "answer": "A word fitly spoken is like apples of gold in settings of silver.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 27:17",
+      "reference": "Proverbs 27:17",
+      "form": "saying",
+      "question": "What sharpens iron, and what does a man sharpen?",
+      "answer": "Iron sharpens iron; so a man sharpens his friend's countenance.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 28:13",
+      "reference": "Proverbs 28:13",
+      "form": "saying",
+      "question": "Who does not prosper, and who finds mercy?",
+      "answer": "He who conceals his sins doesn't prosper, but whoever confesses and renounces them finds mercy.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 30:15-16",
+      "reference": "Proverbs 30:15-16",
+      "form": "saying",
+      "question": "What things are never satisfied, and what things do not say Enough?",
+      "answer": "\"The leach has two daughters: 'Give, give.' \"There are three things that are never satisfied; four that don't say, 'Enough:' Sheol, the barren womb; the earth that is not satisfied with water; and the fire that doesn't say, 'Enough.'",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    },
+    {
+      "id": "WEB Proverbs 30:24-28",
+      "reference": "Proverbs 30:24-28",
+      "form": "saying",
+      "question": "What four things are little on the earth but exceedingly wise?",
+      "answer": "\"There are four things which are little on the earth, but they are exceedingly wise: the ants are not a strong people, yet they provide their food in the summer. The conies are but a feeble folk, yet make they their houses in the rocks. The locusts have no king, yet they advance in ranks. You can catch a lizard with your hands, yet it is in kings' palaces.",
+      "source": "World English Bible, Book of Proverbs (Project Gutenberg 8247)"
+    }
+  ]
+}
