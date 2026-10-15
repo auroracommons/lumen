@@ -1,3 +1,22 @@
+<style>
+.commons-bar { padding: 1em 0; }
+.commons-bar a, .commons-bar span { margin-right: 1em; }
+.commons-bar span[aria-current="page"] { font-weight: bold; }
+.commons-footer { margin-top: 3em; }
+</style>
+
+<nav class="commons-bar" aria-label="Aurora Commons sites">
+  <a href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
+  <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
+  <a href="https://auroracommons.github.io/ground/">Ground</a>
+  <a href="https://auroracommons.github.io/still/">Still</a>
+  <a href="https://auroracommons.github.io/atlas/">Atlas</a>
+  <a href="https://auroracommons.github.io/cohort/">Cohort</a>
+  <a href="https://auroracommons.github.io/graph/">Graph</a>
+  <a href="https://auroracommons.github.io/machine/">Machine</a>
+  <span aria-current="page">Lumen</span>
+</nav>
+
 # Lumen
 
 > *Lumen Gentium*, light of the nations.
@@ -180,3 +199,12 @@ Include the input you gave the demo.
 Include what happened, and what should have happened instead.
 Attach the run if you have it.
 ```
+
+<p>The layer below: <a href="https://auroracommons.github.io/machine/">Machine, autonomy</a></p>
+<p>The research under this layer: <a href="https://auroracommons.github.io/auroracommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
+
+<footer class="commons-footer">
+  <p>One rule: raise the floor beneath everyone.</p>
+  <p>Advised by Groundskeeper.</p>
+  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
+</footer>
