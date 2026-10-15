@@ -10,10 +10,10 @@ every claim in this README is limited to what actually runs.
 > thesis: technology should increase human capability without taking
 > human agency away.
 >
-> - Act 1, the Atlas: [supergravity](https://github.com/thomassupergravity/supergravity), how people learn.
-> - Act 2, the Commons: [cohort](https://github.com/thomassupergravity/cohort), how people find each other and build together.
-> - Act 3, the Machine: [neural-net-lab](https://github.com/thomassupergravity/neural-net-lab), how the machine itself learns, from first principles.
-> - Act 4, the Graph: [knowledge-graph-explorer](https://github.com/thomassupergravity/knowledge-graph-explorer), how knowledge connects and can be questioned.
+> - Act 1, the Atlas: [supergravity](https://github.com/bedrockcommons/supergravity), how people learn.
+> - Act 2, the Commons: [cohort](https://github.com/bedrockcommons/cohort), how people find each other and build together.
+> - Act 3, the Machine: [neural-net-lab](https://github.com/bedrockcommons/neural-net-lab), how the machine itself learns, from first principles.
+> - Act 4, the Graph: [knowledge-graph-explorer](https://github.com/bedrockcommons/knowledge-graph-explorer), how knowledge connects and can be questioned.
 >
 > LUMEN's problem family is unsafe and unaccountable AI. Its north
 > star metric is harmful outputs refused, counted honestly. This repo
@@ -36,7 +36,7 @@ LUMEN serves this need with guardrails that are code, not policy, and a refuser 
 
 Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
 
-The full map: [The Bedrock, a map of human needs](https://github.com/thomassupergravity/thomassupergravity/blob/main/NEEDS.md)
+The full map: [The Bedrock, a map of human needs](https://github.com/bedrockcommons/bedrockcommons/blob/main/NEEDS.md)
 
 ## What it is
 
@@ -140,7 +140,7 @@ Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
 ## Live demo
 
-Live demo: https://thomassupergravity.github.io/lumen-faith-platform/ (render verified October 15, 2026)
+Live demo: https://bedrockcommons.github.io/lumen-faith-platform/ (render verified October 15, 2026)
 
 ## Contribute, human or agent
 
@@ -148,7 +148,7 @@ Pick up a good first issue in this repo. Each one is sized in hours and written 
 Take the Eval Challenge against this repo's published refusal scores: beat the baseline, or find a real failure the current eval misses, with the run attached.
 Report adoption from real use. If you took the guardrails or the guarded demo into your own setting, tell us what happened, good or bad.
 
-The full protocol: [The Open Table](https://github.com/thomassupergravity/thomassupergravity/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/thomassupergravity/thomassupergravity/blob/main/LEDGER.md).
+The full protocol: [The Open Table](https://github.com/bedrockcommons/bedrockcommons/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/bedrockcommons/bedrockcommons/blob/main/LEDGER.md).
 
 ### Start with a prompt
 
