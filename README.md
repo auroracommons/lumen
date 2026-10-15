@@ -19,7 +19,7 @@
 
 # Lumen
 
-> *Lumen Gentium*, light of the nations.
+First step: ask a question from a guarded text through the demo: run node packages/catechism-rag/demo/guarded_qa.mjs "Why did God make you?" and read the answer drawn only from the catechism text, with its source shown.
 
 Lumen serves trust and meaning, Layer 6. Here you can ask a
 question from a guarded text. You get an answer drawn only from
@@ -33,39 +33,6 @@ given. Each text stands on its own. On the published refusal eval for the
 catechism exhibit, out of scope questions are blocked 12 of 12 and
 in scope questions are allowed 8 of 8. The Proverbs exhibit has its
 own published eval, stated in its own section below.
-
-> **Lumen, Ascent Layer 6 (trust and meaning)**. Lumen is one of
-> seven layers. Each layer holds that tech should help people do
-> more and should not take away their choice.
->
-> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
-> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
-> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
-> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
-> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
-> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
->
-> Lumen deals with AI that is not safe and not held to account. We
-> count the harmful outputs it refuses, and we report that count as it is.
-> This repo claims no number for it yet beyond the eval counts
-> below, which are test results, not usage.
->
-> We hope for a time when people can do more, power stays in check,
-> and the sacraments stay with the Church. We state this as a hope
-> and a direction, not as a claim of what we have done. This repo is
-> one small exhibit of the guard work that hope needs.
-
-## The need
-
-Ascent Layer 6: Trust and meaning.
-
-"Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
-
-Lumen serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
-
-Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
-
-The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
 
 ## Open to every tradition
 
@@ -129,11 +96,6 @@ users, and the three apps do not run. What is real:
 - `packages/i18n`, `packages/ui`: small real utilities and design
   tokens.
 
-Earlier versions of this README described the platform in the
-present tense and referenced an `infra/cloudflare` directory that
-does not exist in this tree. That language was wrong and has been
-removed. The design documents remain, labeled as design.
-
 ### Design documents
 
 - [`docs/PRINCIPLES.md`](./docs/PRINCIPLES.md): founding principles.
@@ -161,7 +123,7 @@ docs/                                     design documents
 Design study, Phase 1 pieces verified as listed above. No
 deployment, no users, no production AI calls. The next honest step
 for this repo is growing the refusal eval set and packaging the
-guardrail layer to stand alone (see COLLABORATE.md).
+guardrail layer to stand alone (see [COLLABORATE.md](./COLLABORATE.md)).
 
 ## The proof
 
@@ -222,7 +184,42 @@ In this exhibit:
 Run it: `node exhibits/proverbs/guarded_qa.mjs --eval`
 
 The exhibit's own README, with its method and its stated limits,
-is at `exhibits/proverbs/README.md`.
+is at [exhibits/proverbs/README.md](./exhibits/proverbs/README.md).
+
+> *Lumen Gentium*, light of the nations.
+
+> **Lumen, Ascent Layer 6 (trust and meaning)**. Lumen is one of
+> seven layers. Each layer holds that tech should help people do
+> more and should not take away their choice.
+>
+> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
+> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
+> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
+> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
+> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
+> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
+>
+> Lumen deals with AI that is not safe and not held to account. We
+> count the harmful outputs it refuses, and we report that count as it is.
+> This repo claims no number for it yet beyond the eval counts
+> in this README, which are test results, not usage.
+>
+> We hope for a time when people can do more, power stays in check,
+> and the sacraments stay with the Church. We state this as a hope
+> and a direction, not as a claim of what we have done. This repo is
+> one small exhibit of the guard work that hope needs.
+
+## The need
+
+Ascent Layer 6: Trust and meaning.
+
+"Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
+
+Lumen serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
+
+Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
+
+The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
 
 ## Live demo
 
