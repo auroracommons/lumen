@@ -11,15 +11,15 @@
 </style>
 
 <a class="skip-link" href="#lumen">Skip to the content</a>
-<nav class="commons-bar" aria-label="Aurora Commons sites">
-  <a class="wordmark" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
-  <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
-  <a href="https://auroracommons.github.io/ground/">Ground</a>
-  <a href="https://auroracommons.github.io/still/">Still</a>
-  <a href="https://auroracommons.github.io/atlas/">Atlas</a>
-  <a href="https://auroracommons.github.io/cohort/">Cohort</a>
-  <a href="https://auroracommons.github.io/graph/">Graph</a>
-  <a href="https://auroracommons.github.io/machine/">Machine</a>
+<nav class="commons-bar" aria-label="Topsoil Commons sites">
+  <a class="wordmark" href="https://topsoilcommons.github.io/topsoilcommons/"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>
+  <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">Foundations</a>
+  <a href="https://topsoilcommons.github.io/ground/">Ground</a>
+  <a href="https://topsoilcommons.github.io/still/">Still</a>
+  <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
+  <a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
+  <a href="https://topsoilcommons.github.io/graph/">Graph</a>
+  <a href="https://topsoilcommons.github.io/machine/">Machine</a>
   <span aria-current="page">Lumen (you are here)</span>
 </nav>
 
@@ -27,7 +27,7 @@
 
 First step: read what the guarded answers are, below. You ask a question from a set text, and you get an answer drawn only from that text, with its source shown, or a clear no when the request must not be answered. To try the demo on your own machine, the command sits in the section for agents and builders at the end of this page. One question the demo answers is "Why did God make you?"
 
-Lumen is one of the seven tools of Aurora Commons. It serves
+Lumen is one of the seven tools of Topsoil Commons. It serves
 trust and meaning, Layer 6. Here you can ask a
 question from a guarded text. You get an answer drawn only from
 that text, with its source shown, or a clear no when the request
@@ -109,12 +109,12 @@ builders.
 > seven layers. Each layer holds that tech should help people do
 > more and should not take away their choice.
 >
-> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
-> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
-> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
-> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
-> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
-> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
+> - Ground (Layer 0, the body): [ground](https://github.com/topsoilcommons/ground)
+> - Still (Layer 1, the mind at peace): [still](https://github.com/topsoilcommons/still)
+> - Atlas (Layer 2, learning): [atlas](https://github.com/topsoilcommons/atlas), how people learn.
+> - Cohort (Layer 3, belonging): [cohort](https://github.com/topsoilcommons/cohort), how people find each other and build together.
+> - Graph (Layer 4, shared truth): [graph](https://github.com/topsoilcommons/graph), how knowledge connects and can be questioned.
+> - Machine (Layer 5, autonomy): [machine](https://github.com/topsoilcommons/machine), how the machine itself learns, step by step.
 >
 > Lumen deals with AI that is not safe and not held to account. We
 > count the harmful outputs it refuses, and we report that count as it is.
@@ -136,11 +136,11 @@ Lumen serves this need with guardrails that are code, not policy, and a refuser 
 
 Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
 
-The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
+The full map: [The Ascent, a map of human needs](https://github.com/topsoilcommons/topsoilcommons/blob/main/NEEDS.md)
 
 ## Live demo
 
-Live demo: https://auroracommons.github.io/lumen/ (render verified October 15, 2026)
+Live demo: https://topsoilcommons.github.io/lumen/ (render verified October 15, 2026)
 
 ## For agents and builders
 
@@ -256,7 +256,7 @@ Pick up a good first issue in this repo. Each one is sized in hours and written 
 Take the Eval Challenge against this repo's published refusal scores: beat the baseline, or find a real failure the current eval misses, with the run attached.
 Report adoption from real use. If you took the guardrails or the guarded demo into your own setting, tell us what happened, good or bad.
 
-The full protocol: [The Open Table](https://github.com/auroracommons/auroracommons/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/auroracommons/auroracommons/blob/main/LEDGER.md).
+The full protocol: [The Open Table](https://github.com/topsoilcommons/topsoilcommons/blob/main/OPEN_TABLE.md). Verified work is credited in the public [Ledger](https://github.com/topsoilcommons/topsoilcommons/blob/main/LEDGER.md).
 
 ### Start with a prompt
 
@@ -280,20 +280,20 @@ Include what happened, and what should have happened instead.
 Attach the run if you have it.
 ```
 
-<p>Below this layer: <a href="https://auroracommons.github.io/machine/">Machine, autonomy</a></p>
+<p>Below this layer: <a href="https://topsoilcommons.github.io/machine/">Machine, autonomy</a></p>
 <p>There is no layer above Layer 6.</p>
-<p>The research under this layer: <a href="https://auroracommons.github.io/auroracommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
+<p>The research under this layer: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
 
 Built on Machine: autonomy.
 
 Unlocks the ability to commit.
 
 <footer class="commons-footer">
-  <p><a href="https://auroracommons.github.io/auroracommons/">Back to the home page</a></p>
-  <p>Aurora Commons addresses the hierarchy of human needs through open source.</p>
+  <p><a href="https://topsoilcommons.github.io/topsoilcommons/">Back to the home page</a></p>
+  <p>Topsoil Commons addresses the hierarchy of human needs through open source.</p>
   <p>Motto: Stand on the shoulders of giants.</p>
   <p>One rule: raise the floor beneath everyone.</p>
-  <p>Its record is filed in <a href="https://auroracommons.github.io/index/">the Index</a>.</p>
+  <p>Its record is filed in <a href="https://topsoilcommons.github.io/index/">the Index</a>.</p>
   <p>Advised by Groundskeeper.</p>
-  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
+  <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
 </footer>

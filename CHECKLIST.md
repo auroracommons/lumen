@@ -16,7 +16,7 @@ State as of October 15, 2026. Every line carries its evidence; a line without ev
 - [x] Repo description and topics set (description states the verified refusal results)
 - [x] Good first issues open: #1 add refusal eval cases, #2 grow the demo corpus by one lesson (both labeled good first issue, sized in hours)
 - [x] Tagged release: v0.1.0, first verified baseline (published, marked Latest)
-- [x] Live demo: https://auroracommons.github.io/lumen/ (render verified October 15, 2026)
+- [x] Live demo: https://topsoilcommons.github.io/lumen/ (render verified October 15, 2026)
 - [x] Fresh baseline rerun October 15, 2026: node packages/catechism-rag/demo/guarded_qa.mjs --eval, 12 of 12 blocked, 8 of 8 allowed, 9 of 9 prompts as expected, exit 0
 
 ## Working agreements
