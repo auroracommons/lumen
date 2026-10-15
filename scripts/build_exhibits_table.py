@@ -39,11 +39,11 @@ def main():
             name, corpus["passage_count"], score(results["output_block"]),
             score(results["output_allow"]), score(results["prompts"])))
     table = """%s
-| Exhibit | Units in the corpus | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
+| Exhibit | Units in the set of texts | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
 | --- | --- | --- | --- | --- |
 %s
 
-Key: units are the passages in each exhibit's corpus file. Refused, allowed, and prompts are the three scored blocks of each exhibit's eval results file, both in this repository. The two exhibits are measured within themselves, never against each other.
+Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, both in this repository. The two exhibits are measured within themselves, never against each other.
 %s""" % (BEGIN, "\n".join(rows), END)
 
     path = ROOT / "README.md"

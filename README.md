@@ -1,12 +1,18 @@
 <style>
-.commons-bar { padding: 1em 0; }
-.commons-bar a, .commons-bar span { margin-right: 1em; }
+.commons-bar { position: sticky; top: 0; background: #ffffff; border-bottom: 1px solid #d9d2c3; padding: 0 1em; line-height: 2; z-index: 10; }
+.commons-bar a, .commons-bar span { margin-right: 1em; display: inline-flex; align-items: center; min-height: 44px; }
+.commons-bar .wordmark { font-weight: 600; }
 .commons-bar span[aria-current="page"] { font-weight: bold; }
 .commons-footer { margin-top: 3em; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: #ffffff; padding: 10px 16px; }
+.skip-link:focus { position: static; }
+:focus-visible { outline: 2px solid #1c1a17; outline-offset: 2px; }
+[id] { scroll-margin-top: 72px; }
 </style>
 
+<a class="skip-link" href="#lumen">Skip to the content</a>
 <nav class="commons-bar" aria-label="Aurora Commons sites">
-  <a href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
+  <a class="wordmark" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
   <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
   <a href="https://auroracommons.github.io/ground/">Ground</a>
   <a href="https://auroracommons.github.io/still/">Still</a>
@@ -14,29 +20,31 @@
   <a href="https://auroracommons.github.io/cohort/">Cohort</a>
   <a href="https://auroracommons.github.io/graph/">Graph</a>
   <a href="https://auroracommons.github.io/machine/">Machine</a>
-  <span aria-current="page">Lumen</span>
+  <span aria-current="page">Lumen (you are here)</span>
 </nav>
 
 # Lumen
 
-First step: ask a question from a guarded text through the demo: run node packages/catechism-rag/demo/guarded_qa.mjs "Why did God make you?" and read the answer drawn only from the catechism text, with its source shown.
+First step: read what the guarded answers are, below. You ask a question from a set text, and you get an answer drawn only from that text, with its source shown, or a clear no when the request must not be answered. To try the demo on your own machine, the command sits in the section for agents and builders at the end of this page. One question the demo answers is "Why did God make you?"
 
-Lumen serves trust and meaning, Layer 6. Here you can ask a
+Lumen is one of the seven tools of Aurora Commons. It serves
+trust and meaning, Layer 6. Here you can ask a
 question from a guarded text. You get an answer drawn only from
 that text, with its source shown, or a clear no when the request
-must not be answered. The guard rules are code, not just a policy
-page. This README claims only what runs.
+must not be answered. The guard rules are written into the program
+itself, not just a policy page. This README claims only what runs.
 
 What runs today: demos that answer questions from public domain
-texts. Code checks each answer and blocks answers that must not be
-given. Each text stands on its own. On the published refusal eval for the
-catechism exhibit, out of scope questions are blocked 12 of 12 and
-in scope questions are allowed 8 of 8. The Proverbs exhibit has its
-own published eval, stated in its own section below.
+texts. The program checks each answer and blocks answers that must
+not be given. Each text stands on its own. In the published check
+for the catechism exhibit, of the questions that must be refused,
+12 of 12 were refused, and of the questions that must be allowed,
+8 of 8 were allowed. The Proverbs exhibit has its own published
+check, stated in its own section below.
 
 ## Open to every tradition
 
-Lumen puts guard rules into code, and this way of guarding a text belongs to no one tradition. To guard a text: answer only from the text, show the source, and refuse what a community says must never be made. Each community sets the rules for its own texts. This project does not set them. The corpus that runs today is a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 excluded because they quote guarded words verbatim. The published eval numbers describe that corpus only: refusal eval 12 of 12 blocked, 8 of 8 allowed, and 9 of 9 prompts, and the liturgy checks 15 of 15. Texts from every tradition, and works of meaning outside faith, are welcome on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
+Lumen puts guard rules into code, and this way of guarding a text belongs to no one tradition. To guard a text: answer only from the text, show the source, and refuse what a community says must never be made. Each community sets the rules for its own texts. This project does not set them. The texts that run today are a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 left out because they quote guarded words word for word. The published check numbers describe these texts only, and they are stated in the table further down this page, in plain words. Texts from every tradition, and works of meaning outside faith, are welcome on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
 
 Worth is never weighed here. Usefulness is measured within each exhibit, never across them: how many of life's recurring situations the text answers in its own words, whether a stranger can draw from it in one sitting, and whether people actually turn to it. That measure steers building effort only. It never touches standing. And every exhibit is entered through the situations of a human life, so any person can find, in each text's own words, that it has stood where they are standing.
 
@@ -47,6 +55,98 @@ The standing next step for each exhibit is a situations index: a concordance by 
 Lumen is a design study with two working components and a monorepo of
 scaffolds around them. It is not a deployed platform, it has no
 users, and the three apps do not run. What is real:
+
+Two parts of Lumen run today and are checked by runs in this repo: the guarded catechism demo and the guarded Proverbs exhibit, each described in its own section below. Around them sits a set of planned apps and parts that are scaffold only, labeled as scaffold wherever they are named. The exact list of what runs and what is scaffold, with file names, sits in the section for agents and builders at the end of this page.
+
+## The two exhibits, in one table
+
+<!-- exhibits:begin -->
+| Exhibit | Units in the set of texts | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
+| --- | --- | --- | --- | --- |
+| Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 9 of 9 |
+| Book of Proverbs, World English Bible | 29 | 12 of 12 | 8 of 8 | 10 of 10 |
+
+Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, both in this repository. The two exhibits are measured within themselves, never against each other.
+<!-- exhibits:end -->
+
+## Second exhibit: the Book of Proverbs
+
+This exhibit is shown on its own, under the standing rule stated
+above: each text is honored on its own terms. No blending. No ranking.
+
+The Book of Proverbs is the wisdom book of the Hebrew Bible. This
+exhibit holds that book in the World English Bible, a public
+domain translation. Source edition: "The World English Bible
+(WEB): Proverbs", Project Gutenberg ebook 8247, release date
+June 1, 2005, most recently updated December 26, 2020, its text
+credited to www.ebible.org with slight reformatting by Martin
+Ward. The Project Gutenberg edition is public domain in the USA.
+
+In this exhibit:
+
+- A set of 29 question and answer units drawn from the source
+  edition. Each unit follows the text's own form: a saying and its
+  completion, taken word for word, or, for Proverbs 23:29 to 30, a
+  question the text itself asks and then answers, taken word for
+  word. No answer is paraphrased.
+- A guarded demo that answers questions from those units in the
+  text's own words, with the passage shown, and refuses requests
+  the guard rules forbid, including a request to answer as Solomon.
+- Its own published check, run on October 15, 2026. Of the
+  questions it must refuse, 12 of 12 were refused, each for the
+  expected reason. Of the questions it must allow, 8 of 8 were
+  allowed through. Of the spoken prompts tried against it, 10 of
+  10 behaved as expected. The exact files and commands sit in the
+  section for agents and builders at the end of this page.
+
+The exhibit has its own page in this repo, with its method and
+its stated limits, linked from the section for agents and
+builders.
+
+> *Lumen Gentium*, light of the nations.
+
+> **Lumen, Ascent Layer 6 (trust and meaning)**. Lumen is one of
+> seven layers. Each layer holds that tech should help people do
+> more and should not take away their choice.
+>
+> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
+> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
+> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
+> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
+> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
+> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
+>
+> Lumen deals with AI that is not safe and not held to account. We
+> count the harmful outputs it refuses, and we report that count as it is.
+> This repo claims no number for it yet beyond the check counts
+> in this README, which are test results, not usage.
+>
+> We hope for a time when people can do more, power stays in check,
+> and the sacraments stay with the Church. We state this as a hope
+> and a direction, not as a claim of what we have done. This repo is
+> one small exhibit of the guard work that hope needs.
+
+## The need
+
+Ascent Layer 6: Trust and meaning.
+
+"Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
+
+Lumen serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
+
+Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
+
+The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
+
+## Live demo
+
+Live demo: https://auroracommons.github.io/lumen/ (render verified October 15, 2026)
+
+## For agents and builders
+
+The exact technical description lives in this section. Everything a person needs is stated in plain words above it.
+
+### What is in here, exactly
 
 **Working, and verified by runs in this repo**
 
@@ -125,18 +225,7 @@ deployment, no users, no production AI calls. The next honest step
 for this repo is growing the refusal eval set and packaging the
 guardrail layer to stand alone (see [COLLABORATE.md](./COLLABORATE.md)).
 
-## The two exhibits, in one table
-
-<!-- exhibits:begin -->
-| Exhibit | Units in the corpus | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
-| --- | --- | --- | --- | --- |
-| Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 9 of 9 |
-| Book of Proverbs, World English Bible | 29 | 12 of 12 | 8 of 8 | 10 of 10 |
-
-Key: units are the passages in each exhibit's corpus file. Refused, allowed, and prompts are the three scored blocks of each exhibit's eval results file, both in this repository. The two exhibits are measured within themselves, never against each other.
-<!-- exhibits:end -->
-
-## The proof
+### The proof: the catechism check, exactly
 
 The refusal eval (`packages/catechism-rag/demo/eval_cases.json`,
 run 2026-10-15, results in `demo/eval_results.json`):
@@ -157,84 +246,9 @@ run 2026-10-15, results in `demo/eval_results.json`):
 
 Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
-## Second exhibit: the Book of Proverbs
+### The Proverbs check, exactly
 
-This exhibit is shown on its own, under the standing rule stated
-above: each text is honored on its own terms. No blending. No ranking.
-
-The Book of Proverbs is the wisdom book of the Hebrew Bible. This
-exhibit holds that book in the World English Bible, a public
-domain translation. Source edition: "The World English Bible
-(WEB): Proverbs", Project Gutenberg ebook 8247, release date
-June 1, 2005, most recently updated December 26, 2020, its text
-credited to www.ebible.org with slight reformatting by Martin
-Ward. The Project Gutenberg edition is public domain in the USA.
-
-In this exhibit:
-
-- A corpus of 29 question and answer units at
-  `exhibits/proverbs/corpus.json`, built by
-  `exhibits/proverbs/build_corpus.py` from the source edition.
-  Each unit follows the text's own form: a saying and its
-  completion, taken verbatim, or, for Proverbs 23:29 to 30, a
-  question the text itself asks and then answers, taken verbatim.
-  No answer is paraphrased.
-- A guarded pipeline at `exhibits/proverbs/guarded_qa.mjs` that
-  answers in scope questions extractively from that corpus with
-  the passage cited, and refuses requests the guardrails forbid,
-  including a request to answer as Solomon.
-- Its own refusal eval at `exhibits/proverbs/eval_cases.json`,
-  run 2026-10-15, results in `exhibits/proverbs/eval_results.json`:
-  output block 12 of 12 refused with the expected reason, output
-  allow 8 of 8 allowed through, prompts 10 of 10 behaved as
-  expected. The output block group runs the shared refuser on the
-  guarded shape test set; the allow group runs it on verbatim
-  answers from this exhibit's corpus; the prompt group runs this
-  exhibit's pipeline end to end.
-
-Run it: `node exhibits/proverbs/guarded_qa.mjs --eval`
-
-The exhibit's own README, with its method and its stated limits,
-is at [exhibits/proverbs/README.md](./exhibits/proverbs/README.md).
-
-> *Lumen Gentium*, light of the nations.
-
-> **Lumen, Ascent Layer 6 (trust and meaning)**. Lumen is one of
-> seven layers. Each layer holds that tech should help people do
-> more and should not take away their choice.
->
-> - Ground (Layer 0, the body): [ground](https://github.com/auroracommons/ground)
-> - Still (Layer 1, the mind at peace): [still](https://github.com/auroracommons/still)
-> - Atlas (Layer 2, learning): [atlas](https://github.com/auroracommons/atlas), how people learn.
-> - Cohort (Layer 3, belonging): [cohort](https://github.com/auroracommons/cohort), how people find each other and build together.
-> - Graph (Layer 4, shared truth): [graph](https://github.com/auroracommons/graph), how knowledge connects and can be questioned.
-> - Machine (Layer 5, autonomy): [machine](https://github.com/auroracommons/machine), how the machine itself learns, step by step.
->
-> Lumen deals with AI that is not safe and not held to account. We
-> count the harmful outputs it refuses, and we report that count as it is.
-> This repo claims no number for it yet beyond the eval counts
-> in this README, which are test results, not usage.
->
-> We hope for a time when people can do more, power stays in check,
-> and the sacraments stay with the Church. We state this as a hope
-> and a direction, not as a claim of what we have done. This repo is
-> one small exhibit of the guard work that hope needs.
-
-## The need
-
-Ascent Layer 6: Trust and meaning.
-
-"Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something."
-
-Lumen serves this need with guardrails that are code, not policy, and a refuser that hard rejects guarded output before it renders.
-
-Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
-
-The full map: [The Ascent, a map of human needs](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md)
-
-## Live demo
-
-Live demo: https://auroracommons.github.io/lumen/ (render verified October 15, 2026)
+The Proverbs exhibit pipeline is exhibits/proverbs/guarded_qa.mjs over the corpus at exhibits/proverbs/corpus.json (29 units, built by exhibits/proverbs/build_corpus.py). Its eval case set is exhibits/proverbs/eval_cases.json; run node exhibits/proverbs/guarded_qa.mjs --eval. Results are committed at exhibits/proverbs/eval_results.json: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 10 of 10 behaved as expected, run 2026-10-15. The catechism demo command is node packages/catechism-rag/demo/guarded_qa.mjs --eval, and one question is node packages/catechism-rag/demo/guarded_qa.mjs "Why did God make you?". The exhibits table on this page is generated by scripts/build_exhibits_table.py from the two corpus files and the two eval results files. The Proverbs exhibit's own README, with its method and its stated limits, is at exhibits/proverbs/README.md.
 
 ## Contribute, human or agent
 
@@ -266,7 +280,8 @@ Include what happened, and what should have happened instead.
 Attach the run if you have it.
 ```
 
-<p>The layer below: <a href="https://auroracommons.github.io/machine/">Machine, autonomy</a></p>
+<p>Below this layer: <a href="https://auroracommons.github.io/machine/">Machine, autonomy</a></p>
+<p>There is no layer above Layer 6.</p>
 <p>The research under this layer: <a href="https://auroracommons.github.io/auroracommons/foundations.html#meaning-values-and-flourishing">Foundations, Meaning, values, and human flourishing</a></p>
 
 Built on Machine: autonomy.
@@ -274,6 +289,7 @@ Built on Machine: autonomy.
 Unlocks the ability to commit.
 
 <footer class="commons-footer">
+  <p><a href="https://auroracommons.github.io/auroracommons/">Back to the home page</a></p>
   <p>Aurora Commons addresses the hierarchy of human needs through open source.</p>
   <p>Motto: Stand on the shoulders of giants.</p>
   <p>One rule: raise the floor beneath everyone.</p>
