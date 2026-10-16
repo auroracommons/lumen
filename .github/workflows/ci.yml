@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Guardrail policy sync check
+        run: node scripts/check_policy_sync.mjs
       - name: Refusal eval (guarded catechism Q&A demo)
         working-directory: packages/catechism-rag/demo
         run: node guarded_qa.mjs --eval

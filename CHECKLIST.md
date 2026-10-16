@@ -22,3 +22,4 @@ State as of October 15, 2026. Every line carries its evidence; a line without ev
 ## Working agreements
 - AGENTS.md in this repo governs how changes are made and proven here.
 - Documented tradeoff: verbatim quotation of guarded formulas inside teaching text is blocked by the refuser; corpus questions 241 to 242 are excluded and the exclusion is recorded in the project.
+- [x] Guardrail policy layer published in-repo (October 16, 2026, scoped as in-repo only, no external publication): `packages/guardrail-policy/policy.json` (v1.0.0) and its README, extracted from `packages/catechism-rag/src/refuser.ts` and the catechism demo request screen, referencing (not duplicating) `packages/catechism-rag/demo/eval_cases.json`. Evidence: `node scripts/check_policy_sync.mjs` exits 0 (53 checks) and is wired into CI; refusal evals rerun the same day match baseline (catechism 12 of 12, 8 of 8, 13 of 13; Proverbs 12 of 12, 8 of 8, 10 of 10; Tao Te Ching 12 of 12, 8 of 8, 10 of 10).

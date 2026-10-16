@@ -206,6 +206,18 @@ For agents: the machine files are the three exhibits' corpora and eval files: `p
   shaped, ordination shaped, and named imitation output before it
   renders. It is the enforcement of rules 2 and 3 in
   `docs/AI_GUARDRAILS.md`, in code.
+- **The guardrail policy package** (`packages/guardrail-policy/`):
+  a documented, machine-readable policy package published in this
+  repo (not on npm or any external registry) that another project
+  could adopt by copying it. `policy.json` names the two reason
+  codes exactly as the code names them (`sacrament_substitution`,
+  `named_imitation`), every output pattern from `refuser.ts`, the
+  request screen pattern list from the catechism demo, the corpus
+  exclusion rule for questions 241 and 242, and the tradeoff that
+  verbatim quotation of guarded formulas in teaching text is
+  blocked. `scripts/check_policy_sync.mjs` mechanically verifies
+  `policy.json` against the source and is wired into CI; run
+  `node scripts/check_policy_sync.mjs`.
 - **The guarded catechism demo**
   (`packages/catechism-rag/demo/`): the refuser is part of a pipeline
   that answers questions from a small public domain corpus
@@ -273,7 +285,7 @@ For agents: the machine files are the three exhibits' corpora and eval files: `p
 ```
 apps/{faithful,parish,diocese,api}        faithful: static shell. Others: scaffold.
 exhibits/{proverbs,tao-te-ching}          guarded Q&A exhibits
-packages/{liturgy,catechism-rag}          working components
+packages/{liturgy,catechism-rag,guardrail-policy}  working components (guardrail-policy: policy package, verified by its sync check)
 packages/{schema,i18n,ui}                 types, small utilities, tokens
 packages/{auth,charity-graph,vitality}    placeholders
 docs/                                     design documents
@@ -282,9 +294,12 @@ docs/                                     design documents
 ### Status
 
 Design study, Phase 1 pieces verified as listed above. No
-deployment, no users, no production AI calls. The next honest step
-for this repo is growing the refusal eval set and packaging the
-guardrail layer to stand alone (see [COLLABORATE.md](./COLLABORATE.md)).
+deployment, no users, no production AI calls. The guardrail policy
+layer is published as an in-repo package at
+`packages/guardrail-policy/` (scoped that way: in-repo only, no
+external publication), proven by its sync check against the real
+code. The next honest step for this repo is growing the refusal
+eval set (see [COLLABORATE.md](./COLLABORATE.md)).
 
 ### The proof: the catechism check, exactly
 
