@@ -146,6 +146,8 @@ Live demo: https://topsoilcommons.github.io/lumen/ (render verified October 15, 
 
 The exact technical description lives in this section. Everything a person needs is stated in plain words above it.
 
+For agents: the machine files are the two exhibits' corpora and eval files: `packages/catechism-rag/demo/corpus.json` with its `eval_cases.json` and `eval_results.json`, and `exhibits/proverbs/corpus.json` with its `eval_cases.json` and `eval_results.json`. Each exhibit is measured within itself, never against the other.
+
 ### What is in here, exactly
 
 **Working, and verified by runs in this repo**
