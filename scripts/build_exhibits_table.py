@@ -23,6 +23,9 @@ EXHIBITS = [
     ("Book of Proverbs, World English Bible",
      "exhibits/proverbs/corpus.json",
      "exhibits/proverbs/eval_results.json"),
+    ("Tao Te Ching, translated by James Legge",
+     "exhibits/tao-te-ching/corpus.json",
+     "exhibits/tao-te-ching/eval_results.json"),
 ]
 
 
@@ -43,7 +46,7 @@ def main():
 | --- | --- | --- | --- | --- |
 %s
 
-Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, both in this repository. The two exhibits are measured within themselves, never against each other.
+Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, all in this repository. The exhibits are measured within themselves, never against each other.
 %s""" % (BEGIN, "\n".join(rows), END)
 
     path = ROOT / "README.md"
@@ -57,7 +60,7 @@ Key: units are the passages in each exhibit's set of texts. Refused, allowed, an
         assert anchor in text
         text = text.replace(
             anchor,
-            "## The two exhibits, in one table\n\n" + table + "\n\n" + anchor,
+            "## The exhibits, in one table\n\n" + table + "\n\n" + anchor,
             1)
     path.write_text(text, encoding="utf-8")
     print("build_exhibits_table: %d exhibits" % len(rows))

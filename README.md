@@ -39,12 +39,13 @@ texts. The program checks each answer and blocks answers that must
 not be given. Each text stands on its own. In the published check
 for the catechism exhibit, of the questions that must be refused,
 12 of 12 were refused, and of the questions that must be allowed,
-8 of 8 were allowed. The Proverbs exhibit has its own published
-check, stated in its own section below.
+8 of 8 were allowed. The Proverbs exhibit and the Tao Te Ching
+exhibit each have their own published check, stated in their own
+sections below.
 
 ## Open to every tradition
 
-Lumen puts guard rules into code, and this way of guarding a text belongs to no one tradition. To guard a text: answer only from the text, show the source, and refuse what a community says must never be made. Each community sets the rules for its own texts. This project does not set them. The texts that run today are a first exhibit from one tradition: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 left out because they quote guarded words word for word. The published check numbers describe these texts only, and they are stated in the table further down this page, in plain words. Texts from every tradition, and works of meaning outside faith, are welcome on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
+Lumen puts guard rules into code, and this way of guarding a text belongs to no one tradition. To guard a text: answer only from the text, show the source, and refuse what a community says must never be made. Each community sets the rules for its own texts. This project does not set them. The texts that run today are exhibits from three traditions: 41 questions from the Baltimore Catechism No. 2 (Project Gutenberg 14552), with questions 241 and 242 left out because they quote guarded words word for word; 29 question and answer units from the Book of Proverbs in the World English Bible (Project Gutenberg 8247); and 30 units from the Tao Te Ching in James Legge's translation (Project Gutenberg 216). The published check numbers describe these texts only, and they are stated in the table further down this page, in plain words. Texts from every tradition, and works of meaning outside faith, are welcome on the same terms. The standing rule: each text is honored on its own terms. No blending. No ranking.
 
 Worth is never weighed here. Usefulness is measured within each exhibit, never across them: how many of life's recurring situations the text answers in its own words, whether a stranger can draw from it in one sitting, and whether people actually turn to it. That measure steers building effort only. It never touches standing. And every exhibit is entered through the situations of a human life, so any person can find, in each text's own words, that it has stood where they are standing.
 
@@ -52,21 +53,22 @@ The standing next step for each exhibit is a situations index: a concordance by 
 
 ## What it is
 
-Lumen is a design study with two working components and a monorepo of
+Lumen is a design study with three working components and a monorepo of
 scaffolds around them. It is not a deployed platform, it has no
 users, and the three apps do not run. What is real:
 
-Two parts of Lumen run today and are checked by runs in this repo: the guarded catechism demo and the guarded Proverbs exhibit, each described in its own section below. Around them sits a set of planned apps and parts that are scaffold only, labeled as scaffold wherever they are named. The exact list of what runs and what is scaffold, with file names, sits in the section for agents and builders at the end of this page.
+Three parts of Lumen run today and are checked by runs in this repo: the guarded catechism demo, the guarded Proverbs exhibit, and the guarded Tao Te Ching exhibit, each described in its own section below. Around them sits a set of planned apps and parts that are scaffold only, labeled as scaffold wherever they are named. The exact list of what runs and what is scaffold, with file names, sits in the section for agents and builders at the end of this page.
 
-## The two exhibits, in one table
+## The three exhibits, in one table
 
 <!-- exhibits:begin -->
 | Exhibit | Units in the set of texts | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
 | --- | --- | --- | --- | --- |
 | Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 9 of 9 |
 | Book of Proverbs, World English Bible | 29 | 12 of 12 | 8 of 8 | 10 of 10 |
+| Tao Te Ching, translated by James Legge | 30 | 12 of 12 | 8 of 8 | 10 of 10 |
 
-Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, both in this repository. The two exhibits are measured within themselves, never against each other.
+Key: units are the passages in each exhibit's set of texts. Refused, allowed, and prompts are the three scored blocks of each exhibit's check results file, all in this repository. The exhibits are measured within themselves, never against each other.
 <!-- exhibits:end -->
 
 ## Second exhibit: the Book of Proverbs
@@ -98,6 +100,53 @@ In this exhibit:
   allowed through. Of the spoken prompts tried against it, 10 of
   10 behaved as expected. The exact files and commands sit in the
   section for agents and builders at the end of this page.
+
+The exhibit has its own page in this repo, with its method and
+its stated limits, linked from the section for agents and
+builders.
+
+## Third exhibit: the Tao Te Ching
+
+This exhibit is shown on its own, under the standing rule stated
+above: each text is honored on its own terms. No blending. No ranking.
+
+The Tao Te Ching is the founding text of Taoism, a book of short
+aphoristic chapters. The text is traditionally attributed to
+Laozi; the attribution is the tradition's. This exhibit holds the
+text in James Legge's public domain translation, *The Tao Teh
+King, or the Tao and its Characteristics*, Project Gutenberg
+ebook 216, first published in 1891 in *The Sacred Books of China
+(The Texts of Taoism)*, Sacred Books of the East, volume 39,
+Clarendon Press, Oxford. The edition was produced by Gregory
+Walker and David Widger, and Gutenberg marks it public domain in
+the USA, most recently updated May 11, 2015.
+
+In this exhibit:
+
+- A set of 30 question and answer units drawn from the source
+  edition: 29 sayings and one unit, chapter 44, sections 1 to 3,
+  that follows a comparison the text itself makes. Each answer is
+  taken word for word. Legge's section numerals are removed as
+  his editorial apparatus, and the parenthetical glosses inside
+  the quoted text are James Legge's own additions in this
+  edition, kept verbatim because they are part of the edition
+  and named as his.
+- A guarded demo that answers questions from those units in the
+  text's own words, with the passage shown, and refuses requests
+  the guard rules forbid, including a request to answer as Laozi.
+  At build time every one of the 30 answers was run through the
+  shared refuser: none tripped it, and the corpus's excluded list
+  stands empty on that evidence.
+- A situations concordance, [situations.md](exhibits/tao-te-ching/situations.md):
+  25 situations drawn only from the units in this corpus, each
+  with its passage named, and the selection's gaps named as gaps.
+- Its own published check, run on October 16, 2026. Of the
+  questions it must refuse, 12 of 12 were refused, each for the
+  expected reason. Of the questions it must allow, 8 of 8 were
+  allowed through. Of the spoken prompts tried against it, 10 of
+  10 behaved as expected. Borderline cases are reported, not
+  scored. The exact files and commands sit in the section for
+  agents and builders at the end of this page.
 
 The exhibit has its own page in this repo, with its method and
 its stated limits, linked from the section for agents and
@@ -146,7 +195,7 @@ Live demo: https://topsoilcommons.github.io/lumen/ (render verified October 15, 
 
 The exact technical description lives in this section. Everything a person needs is stated in plain words above it.
 
-For agents: the machine files are the two exhibits' corpora and eval files: `packages/catechism-rag/demo/corpus.json` with its `eval_cases.json` and `eval_results.json`, and `exhibits/proverbs/corpus.json` with its `eval_cases.json` and `eval_results.json`. Each exhibit is measured within itself, never against the other.
+For agents: the machine files are the three exhibits' corpora and eval files: `packages/catechism-rag/demo/corpus.json` with its `eval_cases.json` and `eval_results.json`, `exhibits/proverbs/corpus.json` with its `eval_cases.json` and `eval_results.json`, and `exhibits/tao-te-ching/corpus.json` with its `eval_cases.json` and `eval_results.json`. Each exhibit is measured within itself, never against the others.
 
 ### What is in here, exactly
 
@@ -172,6 +221,16 @@ For agents: the machine files are the two exhibits' corpora and eval files: `pac
   try to draw out guarded words and requests to copy a named person,
   and says no when the corpus does not cover a question. Evaluated
   on its own published case set; see its section below.
+- **The guarded Tao Te Ching exhibit**
+  (`exhibits/tao-te-ching/`): the shared refuser is part of a
+  pipeline that answers questions from a public domain corpus
+  (the Tao Te Ching in James Legge's translation, selected
+  chapters). It answers in the words of the text, shows the
+  source, refuses requests that try to draw out guarded words and
+  requests to copy a named person, including Laozi, and says no
+  when the corpus does not cover a question. Its corpus builder
+  runs every answer through the shared refuser at build time.
+  Evaluated on its own published case set; see its section below.
 - **The liturgical calendar engine** (`packages/liturgy`): computus
   and calendar logic whose smoke script passes 15 of 15 checks,
   including Easter dates verified against published calendars
@@ -213,7 +272,7 @@ For agents: the machine files are the two exhibits' corpora and eval files: `pac
 
 ```
 apps/{faithful,parish,diocese,api}        faithful: static shell. Others: scaffold.
-exhibits/proverbs                         guarded Proverbs Q&A exhibit
+exhibits/{proverbs,tao-te-ching}          guarded Q&A exhibits
 packages/{liturgy,catechism-rag}          working components
 packages/{schema,i18n,ui}                 types, small utilities, tokens
 packages/{auth,charity-graph,vitality}    placeholders
@@ -250,7 +309,11 @@ Run it: `node packages/catechism-rag/demo/guarded_qa.mjs --eval`
 
 ### The Proverbs check, exactly
 
-The Proverbs exhibit pipeline is exhibits/proverbs/guarded_qa.mjs over the corpus at exhibits/proverbs/corpus.json (29 units, built by exhibits/proverbs/build_corpus.py). Its eval case set is exhibits/proverbs/eval_cases.json; run node exhibits/proverbs/guarded_qa.mjs --eval. Results are committed at exhibits/proverbs/eval_results.json: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 10 of 10 behaved as expected, run 2026-10-15. The catechism demo command is node packages/catechism-rag/demo/guarded_qa.mjs --eval, and one question is node packages/catechism-rag/demo/guarded_qa.mjs "Why did God make you?". The exhibits table on this page is generated by scripts/build_exhibits_table.py from the two corpus files and the two eval results files. The Proverbs exhibit's own README, with its method and its stated limits, is at exhibits/proverbs/README.md.
+The Proverbs exhibit pipeline is exhibits/proverbs/guarded_qa.mjs over the corpus at exhibits/proverbs/corpus.json (29 units, built by exhibits/proverbs/build_corpus.py). Its eval case set is exhibits/proverbs/eval_cases.json; run node exhibits/proverbs/guarded_qa.mjs --eval. Results are committed at exhibits/proverbs/eval_results.json: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 10 of 10 behaved as expected, run 2026-10-15. The catechism demo command is node packages/catechism-rag/demo/guarded_qa.mjs --eval, and one question is node packages/catechism-rag/demo/guarded_qa.mjs "Why did God make you?". The exhibits table on this page is generated by scripts/build_exhibits_table.py from the three corpus files and the three eval results files. The Proverbs exhibit's own README, with its method and its stated limits, is at exhibits/proverbs/README.md.
+
+### The Tao Te Ching check, exactly
+
+The Tao Te Ching exhibit pipeline is exhibits/tao-te-ching/guarded_qa.mjs over the corpus at exhibits/tao-te-ching/corpus.json (30 units, built by exhibits/tao-te-ching/build_corpus.py). The builder verified every answer verbatim against the Gutenberg source and ran all 30 answers through the shared refuser at build time: 30 checked, 0 excluded, and the corpus's excluded list is empty on that evidence. Its eval case set is exhibits/tao-te-ching/eval_cases.json; run node exhibits/tao-te-ching/guarded_qa.mjs --eval. Results are committed at exhibits/tao-te-ching/eval_results.json: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 10 of 10 behaved as expected, run 2026-10-16. Borderline cases are reported, not scored: the two teaching texts quoting guarded formulas were refused by the shared refuser, and the attributed statement about Laozi was allowed. The Tao Te Ching exhibit's own README, with its method, its Legge gloss caveat, and its stated limits, is at exhibits/tao-te-ching/README.md, and its situations concordance is at exhibits/tao-te-ching/situations.md.
 
 ## Contribute, human or agent
 

@@ -42,3 +42,18 @@ jobs:
               print(key, f"{group['passed']}/{group['total']}")
           print('proverbs refusal eval: all groups pass')
           PYEOF
+      - name: Refusal eval (guarded Tao Te Ching Q&A exhibit)
+        working-directory: exhibits/tao-te-ching
+        run: node guarded_qa.mjs --eval
+      - name: Verify Tao Te Ching eval results
+        working-directory: exhibits/tao-te-ching
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          d = json.load(open('eval_results.json'))
+          for key in ('output_block', 'output_allow', 'prompts'):
+              group = d[key]
+              assert group['passed'] == group['total'], f"{key}: {group['passed']}/{group['total']}"
+              print(key, f"{group['passed']}/{group['total']}")
+          print('tao te ching refusal eval: all groups pass')
+          PYEOF
