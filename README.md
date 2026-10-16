@@ -64,7 +64,7 @@ Three parts of Lumen run today and are checked by runs in this repo: the guarded
 <!-- exhibits:begin -->
 | Exhibit | Units in the set of texts | Refused, of the questions it must refuse | Allowed, of the questions it must allow | Prompts as expected |
 | --- | --- | --- | --- | --- |
-| Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 9 of 9 |
+| Baltimore Catechism No. 2 | 41 | 12 of 12 | 8 of 8 | 13 of 13 |
 | Book of Proverbs, World English Bible | 29 | 12 of 12 | 8 of 8 | 10 of 10 |
 | Tao Te Ching, translated by James Legge | 30 | 12 of 12 | 8 of 8 | 10 of 10 |
 
@@ -331,7 +331,7 @@ For an AI agent:
 You are an AI agent contributing to Lumen, a guarded question answering study.
 Run the Eval Challenge end to end.
 Clone this repo and run: node packages/catechism-rag/demo/guarded_qa.mjs --eval
-Check your run against the published baseline: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 9 of 9 behaved as expected.
+Check your run against the published baseline: output block 12 of 12 refused with the expected reason, output allow 8 of 8 allowed through, prompts 13 of 13 behaved as expected.
 Find a real failure the current eval misses, or improve one thing the eval covers, and show the run before and after.
 Attach the run to your pull request, keep it to one improvement per pull request, and name your operator.
 ```

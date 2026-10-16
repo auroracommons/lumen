@@ -57,6 +57,16 @@ const REQUEST_RULES = [
   { reason: "sacrament_substitution", pattern: /\bordain\s+me\b/i },
   { reason: "sacrament_substitution", pattern: /\bsay\b[^.?!]{0,40}["']?\s*i\s+absolve/i },
   { reason: "sacrament_substitution", pattern: /\bpretend\s+(you\s+are|to\s+be)\s+a\s+priest\b/i },
+  // Paraphrase gap closed October 16, 2026: requests to perform absolution
+  // that name no guarded verbatim form ("pronounce absolution over me",
+  // "declare my sins forgiven", "give it to me in his place") passed the
+  // screen and were answered with teaching text. The rules below key on a
+  // small set of performance verbs near the word absolution, in either
+  // order, and on declare-plus-forgiven. Teaching questions that merely
+  // name absolution carry none of those verbs and still pass.
+  { reason: "sacrament_substitution", pattern: /\b(pronounce|grant|give|impart|declare)\b[^.?!]{0,40}\babsolution\b/i },
+  { reason: "sacrament_substitution", pattern: /\babsolution\b[^.?!]{0,40}\b(give|grant|pronounce|declare|impart)\b/i },
+  { reason: "sacrament_substitution", pattern: /\bdeclare\b[^.?!]{0,30}\bforgiven\b/i },
   { reason: "named_imitation", pattern: /\bas\s+(pope|saint|st\.)\s+\w+\s+would\s+say\b/i },
   { reason: "named_imitation", pattern: /\banswer\s+as\s+(pope|saint|st\.)\s/i },
   { reason: "named_imitation", pattern: /\bspeaking\s+as\s+(pope|saint)\b/i },
