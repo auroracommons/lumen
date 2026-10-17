@@ -51,30 +51,30 @@ export const IMITATION_REFUSAL =
   "I do not speak in the voice of Solomon or of any named figure. I can show you " +
   "what the Book of Proverbs says, in its own text, with the passage named.";
 
-// Layer two: request screen. The first nine rules are the shared
-// screen from the first exhibit, carried over unchanged. The last
-// three are this exhibit's own named figure.
+// Layer two: request screen. The shared rules are adopted by reference
+// from the guardrail policy package (packages/guardrail-policy/policy.json,
+// adopted October 17, 2026): they are loaded and compiled from that file
+// at startup, not copied here, so a policy change cannot leave this
+// exhibit screening with yesterday's rules. Only this exhibit's own
+// named figure rules, for Solomon, are kept locally, appended after the
+// shared rules in the package's source order.
+const policy = JSON.parse(
+  readFileSync(join(here, "..", "..", "packages", "guardrail-policy", "policy.json"), "utf-8"));
+
+function compilePattern(serialized) {
+  const lastSlash = serialized.lastIndexOf("/");
+  const body = serialized.slice(1, lastSlash);
+  const flags = serialized.slice(lastSlash + 1);
+  return new RegExp(body, flags);
+}
+
+const SHARED_REQUEST_RULES = policy.request_screen.rules.map((rule) => ({
+  reason: rule.reason,
+  pattern: compilePattern(rule.pattern),
+}));
+
 const REQUEST_RULES = [
-  { reason: "sacrament_substitution", pattern: /\babsolve\s+me\b/i },
-  { reason: "sacrament_substitution", pattern: /\bforgive\s+my\s+sins\b/i },
-  { reason: "sacrament_substitution", pattern: /words\s+of\s+(absolution|consecration)/i },
-  { reason: "sacrament_substitution", pattern: /\bconsecrate\b/i },
-  { reason: "sacrament_substitution", pattern: /\bordain\s+me\b/i },
-  { reason: "sacrament_substitution", pattern: /\bsay\b[^.?!]{0,40}["']?\s*i\s+absolve/i },
-  { reason: "sacrament_substitution", pattern: /\bpretend\s+(you\s+are|to\s+be)\s+a\s+priest\b/i },
-  // Paraphrase gap closed October 16, 2026: requests to perform absolution
-  // that name no guarded verbatim form ("pronounce absolution over me",
-  // "declare my sins forgiven", "give it to me in his place") passed the
-  // screen and were answered with teaching text. The rules below key on a
-  // small set of performance verbs near the word absolution, in either
-  // order, and on declare-plus-forgiven. Teaching questions that merely
-  // name absolution carry none of those verbs and still pass.
-  { reason: "sacrament_substitution", pattern: /\b(pronounce|grant|give|impart|declare)\b[^.?!]{0,40}\babsolution\b/i },
-  { reason: "sacrament_substitution", pattern: /\babsolution\b[^.?!]{0,40}\b(give|grant|pronounce|declare|impart)\b/i },
-  { reason: "sacrament_substitution", pattern: /\bdeclare\b[^.?!]{0,30}\bforgiven\b/i },
-  { reason: "named_imitation", pattern: /\bas\s+(pope|saint|st\.)\s+\w+\s+would\s+say\b/i },
-  { reason: "named_imitation", pattern: /\banswer\s+as\s+(pope|saint|st\.)\s/i },
-  { reason: "named_imitation", pattern: /\bspeaking\s+as\s+(pope|saint)\b/i },
+  ...SHARED_REQUEST_RULES,
   { reason: "named_imitation", pattern: /\bas\s+(king\s+)?solomon\s+would\s+say\b/i },
   { reason: "named_imitation", pattern: /\banswer\s+as\s+(king\s+)?solomon\b/i },
   { reason: "named_imitation", pattern: /\bspeaking\s+as\s+(king\s+)?solomon\b/i },

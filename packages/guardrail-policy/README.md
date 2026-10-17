@@ -89,6 +89,14 @@ community sets the rules for its own texts; this project does not
 set them for others. The Proverbs and Tao exhibits in this repo
 show the pattern: they keep the core rules and add exhibit-specific
 named-imitation rules (Solomon, Laozi) in their own pipelines.
+Since October 17, 2026 the Proverbs exhibit adopts the shared
+request screen by reference: it loads and compiles the rules from
+this package's `policy.json` at startup and keeps only its three
+Solomon rules locally, so the shared screen cannot drift between
+the package and that exhibit. Its refusal eval after the change is
+unchanged (12 of 12 blocked, 8 of 8 allowed, 10 of 10 prompts, the
+result file byte identical). The Tao exhibit still carries its own
+copy; adopting by reference there is the next step of the same kind.
 
 ## Sync check
 
