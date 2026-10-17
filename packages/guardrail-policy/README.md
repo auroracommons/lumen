@@ -95,8 +95,13 @@ this package's `policy.json` at startup and keeps only its three
 Solomon rules locally, so the shared screen cannot drift between
 the package and that exhibit. Its refusal eval after the change is
 unchanged (12 of 12 blocked, 8 of 8 allowed, 10 of 10 prompts, the
-result file byte identical). The Tao exhibit still carries its own
-copy; adopting by reference there is the next step of the same kind.
+result file byte identical). Since October 17, 2026 the Tao exhibit
+adopts the shared request screen by reference in the same way: it
+loads and compiles the rules from this package's `policy.json` at
+startup and keeps only its three Laozi rules locally, so the shared
+screen cannot drift between the package and that exhibit. Its
+refusal eval after the change is unchanged (12 of 12 blocked, 8 of
+8 allowed, 10 of 10 prompts, the result file byte identical).
 
 ## Sync check
 
